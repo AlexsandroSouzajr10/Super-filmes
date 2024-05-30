@@ -545,7 +545,7 @@ video{
 
 
 
-/* Titulos dos cards das paginas de filmes(ação, aventura..) e series */
+/* Titulos dos cards na seção dos filmes(ação, aventura..) e series */
 .container__title{
     text-align: left;
     padding: 0 20px;
@@ -565,8 +565,30 @@ video{
     margin: 0 0 8px;
     padding: 0 5px;
 }
-/* //Titulos dos cards das paginas de filmes(ação, aventura..) e series */
+/* //Titulos dos cards na seção dos filmes(ação, aventura..) e series */
 
+
+/* Titulos dos desenhos na seção de animação e biblicos */
+.container__title-desenhos{
+    text-align: left;
+    padding: 0 20px;
+    max-width: 75em;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.container__title-desenhos span{
+    text-transform: uppercase;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: rgb(209 213 219);
+    background: #292c2d38;
+    width: max-content;
+    border-left: 3px solid rgb(215, 16, 16);
+    margin: 0 0 8px;
+    padding: 0 5px;
+}
+/* //Titulos dos desenhos na seção de animação e biblicos */
 
 /* Categorias - Movies */
 .container__poster{
@@ -719,7 +741,6 @@ video{
     gap: 1rem;
     margin: auto;
     max-width: 75rem;
-    margin-top: 100px;
     padding: 0 18px 3rem;
 }
 
@@ -746,7 +767,6 @@ video{
     width: 65px;
     top: 25%;
     left: 37%;
-    color: #fff;
     opacity: 0;
     visibility: hidden;
     scale: 0;
