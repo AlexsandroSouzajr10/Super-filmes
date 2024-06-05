@@ -119,11 +119,7 @@
         font-weight: 400;
     }
 
-    .menu .menu__inner .menu__item > .menu__link:hover{
-        color: #555;
-    }
     .menu .menu__inner .menu__item > .menu__link.active span{
-        color: #fff;
         border-bottom: 1px solid #fff;
         font-weight: 500;
     }

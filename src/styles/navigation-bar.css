@@ -128,7 +128,6 @@
     padding-right: 0;
 }
 .menu .menu__inner .menu__item > .menu__link.active{
-    color: #fff;
     border-bottom: 2px solid #fff;
     font-weight: 500;
 }
@@ -259,6 +258,7 @@
 }
 
 .submenu .submenu__category .submenu__titlemain{
+    position: relative;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
@@ -268,8 +268,19 @@
     color: #fff;
 }
 
-.submenu .submenu__category .submenu__titlemain:hover{
-    color: #555;
+.submenu .submenu__titlemain::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f2f2f2;
+    transition: .5s ease-in;
+}
+
+.submenu .submenu__titlemain:hover::after{
+    width: 100%;
 }
 
 .submenu .submenu__list li{
