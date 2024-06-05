@@ -29,13 +29,14 @@
 .progress-bar__fill{
     width: 0;
     height: inherit;
-    background: rgba(255, 7, 7, 1);
+    background: #ec0000;
     transition: .16s;
 }
 
 .progress-bar--primary{
     z-index: 2;
 }
+
 
 
 .main-post-wrapper{
