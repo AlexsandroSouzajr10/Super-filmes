@@ -112,6 +112,12 @@
         padding: 0;
         width: max-content;
     }
+    .menu .menu__inner .menu__item .menu__session-name {
+        justify-content: flex-start;
+        margin: 20px 0 30px 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
     .menu .menu__inner .menu__item .menu__link {
         justify-content: flex-start;
         margin: 20px 0 30px 20px;
@@ -132,7 +138,7 @@
 
 @media screen and (min-width: 992px) and (min-width: 992px){
     /* == CONT. DO MENU == */
-    .menu .menu__inner .menu__item:hover > .menu__link i{
+    .menu .menu__inner .menu__item:hover > .menu__session-name i{
         transform: rotate(-90deg);
     }
     .menu .menu__inner .menu__item.menu__dropdown:hover > .submenu{

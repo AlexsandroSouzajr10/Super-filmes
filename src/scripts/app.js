@@ -67,3 +67,42 @@ window.addEventListener("scroll", function() {
 	var header = document.querySelector(".header");
 	header.classList.toggle("sticky", window.scrollY > 0);
 })
+
+// Ir para o topo
+  let backToTop = () => {
+    window.scrollTo({
+      top: 0
+    })
+  }
+  
+  let topo = document.querySelector(".topo")
+  
+  let scrollToTop = () => {
+    if (window.scrollY >= 100){
+      topo.classList.add("show")
+    } else{
+      topo.classList.remove("show")
+    }
+  }
+  
+  window.addEventListener('scroll', function() {
+    scrollToTop();
+  })
+
+
+// Carregamento do site
+  let sliderDestaques = document.querySelectorAll(".slider__destaques-loading");
+  let swiperMovies = document.querySelectorAll(".swiperPosterMovies");
+  let cardsMovies = document.querySelectorAll(".cardsMoviePoster");
+  
+  window.addEventListener('load', () => {
+      sliderDestaques.forEach(item => {
+          item.classList.remove("slider__destaques-loading")
+      })
+      swiperMovies.forEach(item => {
+          item.classList.remove("swiperPosterMovies")
+      })
+      cardsMovies.forEach(item => {
+          item.classList.remove("cardsMoviePoster")
+      })
+  });

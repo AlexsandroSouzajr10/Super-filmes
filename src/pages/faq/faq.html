@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="/src/styles/main-content.css">
     <link rel="stylesheet" href="/src/styles/media-queries.css">
     <link rel="stylesheet" href="/src/styles/vars.css">
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/loading.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <div class="loading__container"><div class="loading__content"><div class="spinner"></div><div class="loading"><span>Carregando</span></div></div></div>
 </head>
 <body>
 <header class="header" id="header">
@@ -111,7 +109,7 @@
     </nav>
 </header>
 
-<main class="p-5 bg-light-blue">
+<main class="p-5 bg-light-blue flex items-center h-screen">
     <div class="flex justify-center items-start my-20">
         <div class="w-full sm:w-10/12 md:w-1/2 my-1">
             <h2 class="text-xl text-white font-semibold text-vnet-blue mb-2">FAQ - SuperFilmes</h2>
@@ -165,7 +163,7 @@
     })
 </script>
 
-<footer class="absolute bottom-0">
+<footer>
     <div class="footer__content">
         <h2 class="logo__superfilmes">Super Filmes</h2>
         <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
@@ -175,7 +173,5 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 <script src="/src/scripts/app.js"></script>
-<script src="/src/scripts/loading.js"></script>
-<script src="/src/vendor/tailwindcss.js"></script>
 </body>
 </html>

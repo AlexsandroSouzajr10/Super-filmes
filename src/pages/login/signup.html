@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="/src/styles/media-queries.css">
     <link rel="stylesheet" href="/src/styles/login&signup.css">
     <link rel="stylesheet" href="/src/styles/vars.css">
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/loading.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <div class="loading__container"><div class="loading__content"><div class="spinner"></div><div class="loading"><span>Carregando</span></div></div></div>
 </head>
 <body>
 <header class="header" id="header">
@@ -58,7 +56,7 @@
 
 <section class="login__section">
 <div class="sm:m-20 max-md:bg-black sm:rounded-lg flex justify-center flex-1 lg:flex">
-    <div class="container__login lg:w-1/2 xl:w-5/12 p-12 bg-black">
+    <div class="container__login lg:w-1/2 xl:w-5/12 p-12 bg-[#101010]">
         <div class="max-sm:mt-12 flex flex-col items-center">
             <h1 class="text-2xl xl:text-3xl text-white font-extrabold">
                 Super Filmes conta
@@ -92,7 +90,7 @@
 
                 <div class="my-12 border-b text-center">
                     <div
-                        class="leading-none px-2 inline-block text-sm text-gray-200 tracking-wide font-medium bg-black transform translate-y-1/2">
+                        class="leading-none px-2 inline-block text-sm text-gray-200 tracking-wide font-medium bg-[#101010] transform translate-y-1/2">
                         Ou inscreva-se com email
                     </div>
                 </div>
@@ -136,7 +134,5 @@
 
 <script src="/src/scripts/app.js"></script>
 <script src="/src/scripts/password.js"></script>
-<script src="/src/scripts/loading.js"></script>
-<script src="/src/vendor/tailwindcss.js"></script>
 </body>
 </html>

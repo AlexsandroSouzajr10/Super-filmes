@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="/src/styles/main-content.css">
     <link rel="stylesheet" href="/src/styles/media-queries.css">
     <link rel="stylesheet" href="/src/styles/vars.css">
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/loading.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <div class="loading__container"><div class="loading__content"><div class="spinner"></div><div class="loading"><span>Carregando</span></div></div></div>
 </head>
 <body>
 <header class="header" id="header">
@@ -110,28 +108,27 @@
         </section>
     </nav>
 </header>
-<section class="py-14 lg:py-24 relative">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
-            <div class="lg:pr-24 flex items-center">
+<section class=" flex items-center min-h-screen">
+    <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 relative">
+        <div class="flex justify-around max-md:flex-col">
+            <div class="lg:pr-32 flex items-center">
                 <div class="data w-full">
-                    <img src="/src/assets/about/holidays-friends-relaxing-and-watching-tv-together.png" class="block lg:hidden mb-9 mx-auto" alt="" />
                     <h2 class="font-manrope font-semibold text-4xl lg:text-4xl text-white mb-8 max-lg:text-center">
                         Sobre a Super Filmes
                     </h2>
-                    <p class="text-lg leading-8 text-gray-400 max-lg:text-center max-w-2xl mx-auto">
+                    <p class="text-lg leading-8 text-gray-400 max-lg:text-center max-w-[500px] mx-auto">
                         A Super Filmes e um site de filmes e series(streaming), a Super Filmes tem a total responsabilidade de colocar os seus conteudos e com toda a segurança pros nossos clientes no site.
                     </p>
                 </div>
             </div>
             <div class="image__box">
-                <img src="/src/assets/about/holidays-friends-relaxing-and-watching-tv-together.png" class="hidden lg:block mx-auto" alt="" />
+                <img src="/src/assets/about/pessoas-assistindo-na-tv.png" class="hidden lg:block mx-auto" alt="pessoas assistindo na tv" />
             </div>
         </div>
     </div>
 </section>
 
-<footer class="absolute bottom-0">
+<footer>
     <div class="footer__content">
         <h2 class="logo__superfilmes">Super Filmes</h2>
         <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
@@ -139,7 +136,5 @@
 </footer>
 
 <script src="/src/scripts/app.js"></script>
-<script src="/src/scripts/loading.js"></script>
-<script src="/src/vendor/tailwindcss.js"></script>
 </body>
 </html>

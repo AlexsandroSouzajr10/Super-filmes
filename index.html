@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Super Filmes - A sua streaming de filmes</title>
     <link rel="website icon" type="png" href="/src/assets/logo/logo.png" />
-    <link rel="stylesheet" href="/src/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/src/vendors/swiper-bundle.min.css">
     <link rel="stylesheet" href="/src/styles/navigation-bar.css">
     <link rel="stylesheet" href="/src/styles/main-content.css">
     <link rel="stylesheet" href="/src/styles/media-queries.css">
@@ -14,12 +14,7 @@
     <link rel="stylesheet" href="/src/styles/modal-video.css">
     <link rel="stylesheet" href="/src/styles/movie-description-modal.css">
     <link rel="stylesheet" href="/src/styles/vars.css">
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/loading.css">
-    <link rel="stylesheet" href="/src/styles/skeleton.css">
-    <link rel='stylesheet' href='/src/styles/owl.min.css'>
-    <link rel="stylesheet" href="/src/vendor/jquery.modal.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="/src/vendors/jquery.modal.min.css" />
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -52,7 +47,7 @@
                     </span>
                     <li class="menu__item"><a href="/index.html" class="menu__link active"><span>Início</span></a></li>
                     <li class="menu__item menu__dropdown">
-                        <div class="menu__link">
+                        <div class="menu__session-name">
                             <span>Filmes</span>
                             <i class="ri-arrow-right-s-line"></i>
                         </div>
@@ -81,7 +76,7 @@
                         </div>
                     </li>
                     <li class="menu__item menu__dropdown">
-                        <div class="menu__link">
+                        <div class="menu__session-name">
                             <span>Séries</span>
                             <i class="ri-arrow-right-s-line"></i>
                         </div>
@@ -269,7 +264,7 @@
     </header>
 
     <div class="posts-wrapper hide-on-mobile">
-        <article class="post post--active post-images--active">
+        <article class="post post--active post-images--active sliderMainMovie">
             <div class="progress__bar-card">
                 <div class="progress-bar__fill"></div>
             </div>
@@ -795,7 +790,7 @@
         <div class="card-slide-container">
             <div class="card-slider-wrapper swiper-wrapper">
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Leo - poster.jpg" alt="Leo - Filme - poster" />
                         <a href="#desc-film-lançamentos" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Leo - filme.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Leo - Filme - Trailer.mp4">
@@ -846,7 +841,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Debaixo do Píer - poster.jpg" alt="Debaixo do Píer - poster" />
                         <a href="#desc-film-lançamentos-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Debaixo do Píer.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Debaixo do Píer Trailer.mp4">
@@ -893,7 +888,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Stand Up – Minha Vida É uma Piada - poster.jpg" alt="Stand Up – Minha Vida É uma Piada - poster" />
                         <a href="#desc-film-lançamentos-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Stand Up – Minha Vida É uma Piada.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/STAND UP – MINHA VIDA É UMA PIADA _ Trailer Oficial.mp4">
@@ -940,7 +935,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Buena Hamburguesa 2 - poster.jpg" alt="Buena Hamburguesa 2 - poster" />
                         <a href="#desc-film-lançamentos-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Buena Hamburguesa 2.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Trailer Oficial _ Good Burger 2.mp4">
@@ -986,7 +981,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/O Melhor Lugar da Terra - poster.jpg" alt="O Melhor Lugar da Terra - poster" />
                         <a href="#desc-film-lançamentos-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/O Melhor Lugar da Terra.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/O Melhor Lugar da Terra _ Trailer _ Dublado.mp4">
@@ -1032,7 +1027,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Plano de Família - poster.jpg" alt="Plano de Família - poster" />
                         <a href="#desc-film-lançamentos-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Plano de Família.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Plano Em Família 2023 Trailer Oficial Legendado.mp4">
@@ -1079,7 +1074,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Quem Fizer Ganha - poster.jpg" alt="Quem Fizer Ganha - poster" />
                         <a href="#desc-film-lançamentos-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none">
@@ -1126,7 +1121,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Herói por Encomenda - poster.jpg" alt="Herói por Encomenda - poster" />
                         <a href="#desc-film-lançamentos-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Herói por Encomenda.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Herói por Encomenda Trailer Oficial Legendado.mp4">
@@ -1173,7 +1168,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Dunki - poster.jpg" alt="Dunki - poster" />
                         <a href="#desc-film-lançamentos-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Dunki.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Dunki _ Official Trailer.mp4">
@@ -1232,7 +1227,7 @@
         <div class="card-slide-container-animation">
             <div class="card-slider-wrapper swiper-wrapper">
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Hop - Rebelde sem Páscoa.jpg" alt="Hop - Rebelde sem Páscoa - poster" />
                         <a href="#desc-film-animation" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Hop Rebelde sem Páscoa.png" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Hop - O Rebelde Sem Páscoa - Trailer Dublado.mp4">
@@ -1280,7 +1275,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/OBomDinossauro.jpg" alt="O Bom Dinossauro - poster" />
                         <a href="#desc-film-animation-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/O Bom Dinossauro.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/O Bom Dinossauro Trailer Oficial.mp4">
@@ -1328,7 +1323,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Divertida Mente 2.jpg" alt="Divertida Mente 2 - poster" />
                         <a href="#desc-film-animation-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Divertida Mente 2.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Divertida Mente 2 _ Trailer Dublado.mp4">
@@ -1376,7 +1371,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Super Mario Bros O Filme.jpg" alt="Super Mario Bros O Filme - poster" />
                         <a href="#desc-film-animation-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Super Mario Bros O Filme.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/SUPER MARIO BROS - O FILME _ Trailer Oficial.mp4">
@@ -1424,7 +1419,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Sing 2.jpg" alt="Sing 2 - poster" />
                         <a href="#desc-film-animation-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Sing 2.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/SING 2 _ Trailer 2 Oficial.mp4">
@@ -1471,7 +1466,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/O Lorax - Em Busca da Trúfula Perdida.jpg" alt="O Lorax: Em Busca da Trúfula Perdida - poster" />
                         <a href="#desc-film-animation-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/O Lorax - Em Busca da Trúfula Perdida.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/O Lorax -- Em Busca da Trúfula Perdida - Trailer.mp4">
@@ -1519,7 +1514,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/O Rei Leão.jpg" alt="O Rei Leão - poster" />
                         <a href="#desc-film-animation-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/O Rei Leão - Filme.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/O Rei Leão _ Trailer 2019_ Oficial.mp4">
@@ -1566,7 +1561,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/soul - poster.jpg" alt="Soul - poster" />
                         <a href="#desc-film-animation-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Soul.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Soul - Trailer Dublado.mp4">
@@ -1613,7 +1608,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/osBoxTrolls.jpg" alt="Os Boxtrolls - poster" />
                         <a href="#desc-film-animation-teen" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Os Boxtrolls.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Os Boxtrolls - Trailer Internacional Dublado.mp4">
@@ -1673,7 +1668,7 @@
         <div class="card-slide-container-aventure">
             <div class="card-slider-wrapper swiper-wrapper">
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Lightyear.jpeg" alt="Lightyear - poster" />
                         <a href="#desc-film-aventure" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Lightyear.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Lightyear Trailer.mp4">
@@ -1724,7 +1719,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Meu Amigo o Dragão.jpg" alt="Meu Amigo, o Dragão - poster" />
                         <a href="#desc-film-aventure-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none">
@@ -1774,7 +1769,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/A Fera do Mar.jpg" alt="A Fera do Mar - poster" />
                         <a href="#desc-film-aventure-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/A Fera do Mar.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/A Fera do Mar _ Trailer _ Dublado.mp4">
@@ -1825,7 +1820,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Lara-Croft-Tomb-Raider.jpg" alt="Lara Croft: Tomb Raider - poster" />
                         <a href="#desc-film-aventure-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Lara Croft - Tomb Raider.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Lara Croft - Tomb Raider - Trailer Legendado.mp4">
@@ -1877,7 +1872,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/A-Lenda-do-Tesouro-Perdido.png" alt="A Lenda do Tesouro Perdido - poster" />
                         <a href="#desc-film-aventure-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/A Lenda do Tesouro Perdido.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/A Lenda do Tesouro Perdido Trailer Oficial Legendado.mp4">
@@ -1929,7 +1924,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Na-Selva.jpg" alt="Na Selva - poster" />
                         <a href="#desc-film-aventure-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Na Selva.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Na Selva - Trailer Oficial.mp4">
@@ -1980,7 +1975,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Jumanji - Bem-vindo à Selva.jpg" alt="Jumanji: Bem-vindo à Selva - poster" />
                         <a href="#desc-film-aventura-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Jumanji - Bem-vindo à Selva.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Jumanji_ Bem-vindo à Selva Trailer Internacional (Dublado).mp4">
@@ -2032,7 +2027,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Donzela.jpg" alt="Donzela - poster" />
                         <a href="#desc-film-aventure-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Donzela.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Donzela - Trailer Dublado.mp4">
@@ -2083,7 +2078,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/abominavel.jpg" alt="Abominável - poster" />
                         <a href="#desc-film-aventure-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Abominável.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Abominável _ Trailer Dublado.mp4">
@@ -2148,7 +2143,7 @@
         <div class="card-slide-container-comedia">
             <div class="card-slider-wrapper swiper-wrapper">
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Os Farofeiros - poster.jpg" alt="Os Farofeiros - poster" />
                         <a href="#desc-film-comédia" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Farofeiros.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS Trailer.mp4">
@@ -2200,7 +2195,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Os Farofeiros 2 - poster.png" alt="Os Farofeiros 2 - poster" />
                         <a href="#desc-film-comédia-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Farofeiros 2.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS 2 - Trailer Oficial.mp4">
@@ -2252,7 +2247,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Dias Perfeitos - poster.png" alt="Dias Perfeitos - poster" />
                         <a href="#desc-film-comédia-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Dias Perfeitos.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Dias Perfeitos - Trailer Oficial (Legendado).mp4">
@@ -2304,7 +2299,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/O Homem dos Sonhos - poster.png" alt="O Homem dos Sonhos - poster" />
                         <a href="#desc-film-comédia-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/o homem dos sonhos.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/O Homem dos Sonhos - Trailer Dublado.mp4">
@@ -2356,7 +2351,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Minha Irmã e Eu - poster.png" alt="Minha Irmã e Eu - poster" />
                         <a href="#desc-film-comédia-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Minha Irmã e Eu.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Minha Irmã E Eu - Trailer Oficial.mp4">
@@ -2408,7 +2403,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Zé Colméia – O Filme - poster.png" alt="Zé Colméia – O Filme - poster" />
                         <a href="#desc-film-comédia-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Zé Colméia – O Filme.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Zé Colmeia - o Filme - Trailer dublado.mp4">
@@ -2460,7 +2455,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Os Caras Malvados.jpg" alt="Os Caras Malvados - poster" />
                         <a href="#desc-film-comédia-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Caras Malvados.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Os Caras Malvados - Trailer Oficial.mp4">
@@ -2512,7 +2507,7 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
+                    <div class="imageBox__poster cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/A Família Mitchell e a Revolta das Máquinas.png" alt="A Família Mitchell e a Revolta das Máquinas - poster" />
                         <a href="#desc-film-comédia-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/A Família Mitchell e a Revolta das Máquinas.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/A Família Mitchell e a Revolta das Máquinas Trailer Dublado.mp4">
@@ -2578,13 +2573,13 @@
         <div class="card-slide-container-series">
             <div class="card-slider-wrapper swiper-wrapper">
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/operação-lioness-poster.png" alt="Operação: Lioness - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/operação-lioness-poster.png" alt="Operação: Lioness - poster" />
                         <a href="#desc-serie" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/operação-lioness-poster.png"
+                            <img src="/src/assets/posters-movies/séries/operação-lioness-poster.png"
                                 alt="Operação: Lioness - poster" />
                         </div>
                         <h4 class="title">Operação: Lioness</h4>
@@ -2612,13 +2607,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/citadel-poster.png" alt="Citadel - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/citadel-poster.png" alt="Citadel - poster" />
                         <a href="#desc-serie-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-two" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/citadel-poster.png" alt="Citadel - poster" />
+                            <img src="/src/assets/posters-movies/séries/citadel-poster.png" alt="Citadel - poster" />
                         </div>
                         <h4 class="title">Citadel</h4>
                         <div class="tags-movie"><span>2023</span><span>Ação</span><span>1 temporada</span></div>
@@ -2646,13 +2641,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/falando-a-real-poster.png" alt="Falando a Real - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/falando-a-real-poster.png" alt="Falando a Real - poster" />
                         <a href="#desc-serie-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-tree" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/falando-a-real-poster.png"
+                            <img src="/src/assets/posters-movies/séries/falando-a-real-poster.png"
                                 alt="Falando a Real - poster" />
                         </div>
                         <h4 class="title">Falando a Real</h4>
@@ -2681,13 +2676,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/wolf-pack-poster.png" alt="Wolf Pack - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/wolf-pack-poster.png" alt="Wolf Pack - poster" />
                         <a href="#desc-serie-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-four" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/wolf-pack-poster.png"
+                            <img src="/src/assets/posters-movies/séries/wolf-pack-poster.png"
                                 alt="Wolf Pack - poster" />
                         </div>
                         <h4 class="title">Wolf Pack</h4>
@@ -2718,13 +2713,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/a-garota-na-fita-poster.png" alt="A Garota na Fita - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/a-garota-na-fita-poster.png" alt="A Garota na Fita - poster" />
                         <a href="#desc-serie-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-five" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/a-garota-na-fita-poster.png"
+                            <img src="/src/assets/posters-movies/séries/a-garota-na-fita-poster.png"
                                 alt="A Garota na Fita - poster" />
                         </div>
                         <h4 class="title">A Garota na Fita</h4>
@@ -2751,13 +2746,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/as-pequenas-coisas-da-vida-poster.png" alt="As Pequenas Coisas da Vida - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/as-pequenas-coisas-da-vida-poster.png" alt="As Pequenas Coisas da Vida - poster" />
                         <a href="#desc-serie-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-six" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/as-pequenas-coisas-da-vida-poster.png"
+                            <img src="/src/assets/posters-movies/séries/as-pequenas-coisas-da-vida-poster.png"
                                 alt="As Pequenas Coisas da Vida - poster" />
                         </div>
                         <h4 class="title">As Pequenas Coisas da Vida</h4>
@@ -2783,13 +2778,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/uma-questão-de-química-poster.png" alt="Uma Questão de Química - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/uma-questão-de-química-poster.png" alt="Uma Questão de Química - poster" />
                         <a href="#desc-serie-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-seven" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/uma-questão-de-química-poster.png"
+                            <img src="/src/assets/posters-movies/séries/uma-questão-de-química-poster.png"
                                 alt="Uma Questão de Química - poster" />
                         </div>
                         <h4 class="title">Uma Questão de Química</h4>
@@ -2818,13 +2813,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/depois-da-cabana-poster.png" alt="Depois da Cabana - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/depois-da-cabana-poster.png" alt="Depois da Cabana - poster" />
                         <a href="#desc-serie-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-eight" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/depois-da-cabana-poster.png"
+                            <img src="/src/assets/posters-movies/séries/depois-da-cabana-poster.png"
                                 alt="Depois da Cabana - poster" />
                         </div>
                         <h4 class="title">Depois da Cabana</h4>
@@ -2855,13 +2850,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/a-diplomata-poster.png" alt="A Diplomata - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/a-diplomata-poster.png" alt="A Diplomata - poster" />
                         <a href="#desc-serie-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-nine" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/a-diplomata-poster.png"
+                            <img src="/src/assets/posters-movies/séries/a-diplomata-poster.png"
                                 alt="A Diplomata - poster" />
                         </div>
                         <h4 class="title">A Diplomata</h4>
@@ -2888,13 +2883,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/enfermeira-poster.png" alt="Enfermeira - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/enfermeira-poster.png" alt="Enfermeira - poster" />
                         <a href="#desc-serie-teen" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-teen" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/enfermeira-poster.png"
+                            <img src="/src/assets/posters-movies/séries/enfermeira-poster.png"
                                 alt="Enfermeira - poster" />
                         </div>
                         <h4 class="title">Enfermeira</h4>
@@ -2923,13 +2918,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/negociador-poster.png" alt="Negociador - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/negociador-poster.png" alt="Negociador - poster" />
                         <a href="#desc-serie-eleven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-eleven" class="modal">
                         <div class="image__poster--modal">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/negociador-poster.png" alt="Negociador - poster" />
+                        <img src="/src/assets/posters-movies/séries/negociador-poster.png" alt="Negociador - poster" />
                         </div>
                         <h4 class="title">Negociador</h4>
                         <div class="tags-movie"><span>2023</span><span>Thriller</span><span>1 temporada</span></div>
@@ -2952,13 +2947,13 @@
                     </div>
                 </div>
                 <div class="card-item swiper-slide">
-                    <div class="imageBox__poster moviePosterLoading">
-                        <img src="/src/assets/posters-movies/séries/séries-mais-populares/refúgio-poster.png" alt="Refúgio - poster" />
+                    <div class="imageBox__poster cardsMoviePoster">
+                        <img src="/src/assets/posters-movies/séries/refúgio-poster.png" alt="Refúgio - poster" />
                         <a href="#desc-serie-twelve" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
                     <div id="desc-serie-twelve" class="modal">
                         <div class="image__poster--modal">
-                            <img src="/src/assets/posters-movies/séries/séries-mais-populares/refúgio-poster.png" alt="Refúgio - poster" />
+                            <img src="/src/assets/posters-movies/séries/refúgio-poster.png" alt="Refúgio - poster" />
                         </div>
                         <h4 class="title">Refúgio</h4>
                         <div class="tags-movie"><span>2023</span><span>Thriller</span><span>1 temporada</span></div>
@@ -3033,12 +3028,9 @@
 <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src="/src/scripts/app.js"></script>
-<script src="/src/scripts/loading.js"></script>
-<script src="/src/scripts/skeleton.js"></script>
-<script src="/src/scripts/scrollToTop.js"></script>
 <script src="/src/scripts/modal-video.js"></script>
 <script src="/src/scripts/cards-movie.js"></script>
 <script src="/src/scripts/slides-movie.js"></script>
-<script src="/src/vendor/jquery.modal.min.js"></script>
+<script src="/src/vendors/jquery.modal.min.js"></script>
 </body>
 </html>

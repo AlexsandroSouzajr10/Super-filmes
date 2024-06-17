@@ -132,6 +132,18 @@
     font-weight: 500;
 }
 
+.menu .menu__inner .menu__item .menu__session-name{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    transition: .15s ease;
+}
+
 .menu .menu__inner .menu__item .menu__link{
     position: relative;
     display: flex;
@@ -160,7 +172,7 @@
     width: 100%;
 }
 
-.menu .menu__inner .menu__item .menu__link > i{
+.menu .menu__inner .menu__item .menu__session-name > i{
     margin-left: 5px;
     font-size: 1.35rem;
     transform: rotate(90deg);
@@ -168,7 +180,7 @@
 }
 
 @media (max-width: 992px){
-    .menu .menu__inner .menu__item .menu__link > i{
+    .menu .menu__inner .menu__item .menu__session-name > i{
         margin-left: 10px;
         transform: rotate(0deg);
     }
