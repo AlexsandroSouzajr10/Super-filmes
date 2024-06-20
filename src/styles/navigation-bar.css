@@ -36,7 +36,7 @@
 
 .header.sticky::after{
     height: 100%;
-    background: #000;
+    background: var(--bg-navigation);
 }
 
 .header{
@@ -105,8 +105,14 @@
     transition: 300ms;
 }
 
-.logo span{
-    margin: 0 2px;
+.logo img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.logo__nav img{
+    width: 25px;
+    margin-right: 10px;
 }
 
 .logo__nav{
@@ -130,6 +136,9 @@
 .menu .menu__inner .menu__item > .menu__link.active{
     border-bottom: 2px solid #fff;
     font-weight: 500;
+}
+.menu .menu__inner .menu__item > .menu__link.active:hover::after{
+    scale: 0;
 }
 
 .menu .menu__inner .menu__item .menu__session-name{
@@ -190,42 +199,33 @@
 .submenu{
     position: absolute;
     z-index: 100;
-    top: 110%;
-    left: 45%;
-    width: max-content;
+    top: 100%;
+    transform: translate(-18px, -10px);
+    display: none;
+    width: 100px;
     overflow: auto;
-    background: #141313;
+    background: var(--bg-dropdown);
     max-height: 800px;
-    padding: 20px 15px;
-    border-radius: .25rem;
+    padding: 10px 10px;
+    border-radius: 6px;
     border-top: 2px solid var(--submenu-navlinks-color);
     box-shadow: var(--shadow-medium);
     opacity: 0;
     visibility: hidden;
     transition: .15s ease-in-out;
-    transform: translateX(-50%);
 }
 
-.submenu.megamenu__image .submenu__inner a{
+.submenu div{
     display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.submenu.megamenu__image .submenu__inner a img{
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 10px;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .submenu .submenu-title{
     position: absolute;
     top: 10px;
     left: 15px;
+    display: none;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
@@ -237,37 +237,18 @@
 .submenu .submenu__category{
     width: 100%;
     position: relative;
-    top: 30px;
+    top: 0;
+    margin: auto;
     text-align: center;
     cursor: pointer;
 }
 
-
-.submenu .submenu__inner{
-    width: auto;
-    margin: 0 auto;
-    overflow-y: auto;
-    margin: 0 15px 2em;
-}
 @media (min-width: 50px){
-    .submenu .submenu__inner{
-        width: max-content;
-        margin: 0 0 1.5em;
-    }
     .submenu .submenu__category{
         width: max-content;
-        margin: 0 0 1.5em;
     }
 }
 
-.submenu .submenu__inner .submenu__titlemain{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    transition: .3s ease;
-    height: 0;
-}
 
 .submenu .submenu__category .submenu__titlemain{
     position: relative;
@@ -299,15 +280,6 @@
     display: block;
     line-height: 1;
     margin: 0 auto;
-}
-
-.submenu .submenu__inner li a{
-    display: inline-block;
-    padding: 10px 0;
-    line-height: 1.4;
-    text-transform: capitalize;
-    color: #000;
-    transition: .25s ease-in-out;
 }
 
 .submenu .submenu__list li a:hover{
@@ -418,18 +390,19 @@
 }
 
 .sign-in a{
-    background: rgb(213, 17, 17);
+    background: var(--bg-button-sign-in);
+    border: 1px solid var(--bg-button-sign-in);
     color: #fff;
     padding: 5px 20px;
     margin: 0 5px;
     border-radius: 20px;
     font-size: 14px;
     white-space: nowrap;
-    transition: background 300ms;
+    transition: 300ms;
 }
 
 .sign-in a:hover{
-    background: #e94c4cf5;
+    background: transparent;
 }
 
 .sign-in-hidden{
@@ -439,7 +412,8 @@
 }
 
 .sign-in-hidden a{
-    background: rgb(213, 17, 17);
+    background: var(--bg-button-sign-in);
+    border: 1px solid var(--bg-button-sign-in);
     color: #fff;
     padding: 5px 20px;
     margin: 5px;
@@ -450,7 +424,7 @@
 }
 
 .sign-in-hidden a:hover{
-    background: #e94c4cf5;
+    background: transparent;
 }
 
 .sign-in-hidden{
@@ -515,11 +489,6 @@
     margin: 0 35px;
 }
 
-/* .navbar__left span{
-    margin-right: 20px;
-    color: #fff;
-} */
-
 
 .topo{
     position: fixed;
@@ -569,8 +538,15 @@ footer .footer__content{
 
 .footer__content .logo__superfilmes{
     color: #f2f2f2;
-    font-size: 1.5em;
+    font-size: 1.15em;
     font-weight: 500;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__content .logo__superfilmes img{
+    width: 28px;
+    pointer-events: none;
 }
 
 .footer__content span{

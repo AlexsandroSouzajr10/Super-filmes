@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Super Filmes - A sua streaming de filmes</title>
+    <title>Super Filmes</title>
     <link rel="website icon" type="png" href="/src/assets/logo/logo.png" />
     <link rel="stylesheet" href="/src/vendors/swiper-bundle.min.css">
     <link rel="stylesheet" href="/src/styles/navigation-bar.css">
@@ -29,9 +29,10 @@
                 <span class="burger-line"></span>
             </div>
             <a href="/index.html">
-                <span class="logo">
-                    Super <span>Filmes</span>
-                </span>
+                <div class="logo">
+                    <img src="/src/assets/logo/logo.png" alt="Logo da Super Filmes" />
+                    Super Filmes
+                </div>
             </a>
         </section>
         <section class="navbar__center">
@@ -43,6 +44,7 @@
                 </div>
                 <ul class="menu__inner">
                     <span class="logo__nav">
+                        <img src="/src/assets/logo/logo.png" alt="Logo da Super Filmes" />
                         Super <span>Filmes</span>
                     </span>
                     <li class="menu__item"><a href="/index.html" class="menu__link active"><span>Início</span></a></li>
@@ -53,25 +55,27 @@
                         </div>
                         <div class="submenu megamenu__image">
                             <span class="submenu-title">Filmes</span>
-                            <div class="submenu__category">
-                                <a href="/src/pages/movies/acao/acao.html">
-                                    <span class="submenu__titlemain">Ação</span>
-                                </a>
-                            </div>
-                            <div class="submenu__category">
-                                <a href="/src/pages/movies/aventura/aventura.html">
-                                    <span class="submenu__titlemain">Aventura</span>
-                                </a>
-                            </div>
-                            <div class="submenu__category">
-                                <a href="/src/pages/movies/animacao/animacao.html">
-                                    <span class="submenu__titlemain">Animação</span>
-                                </a>
-                            </div>
-                            <div class="submenu__category">
-                                <a href="/src/pages/movies/biblicos/biblicos.html">
-                                    <span class="submenu__titlemain">Bíblicos</span>
-                                </a>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/acao/acao.html">
+                                        <span class="submenu__titlemain">Ação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/aventura/aventura.html">
+                                        <span class="submenu__titlemain">Aventura</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/biblicos/biblicos.html">
+                                        <span class="submenu__titlemain">Bíblicos</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -82,19 +86,20 @@
                         </div>
                         <div class="submenu megamenu__image">
                             <span class="submenu-title">Séries</span>
-                            <div class="submenu__category">
-                                <a href="/src/pages/series/acao/acao.html">
-                                    <span class="submenu__titlemain">Ação</span>
-                                </a>
-                            </div>
-                            <div class="submenu__category">
-                                <a href="/src/pages/series/animacao/animacao.html">
-                                    <span class="submenu__titlemain">Animação</span>
-                                </a>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/acao/acao.html">
+                                        <span class="submenu__titlemain">Ação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </li>
-                    <li class="menu__item"><a href="/src/pages/faq/faq.html" class="menu__link"><span>FAQ</span></a></li>
                     <li class="menu__item"><a href="/src/pages/sobre/sobre.html" class="menu__link"><span>Sobre</span></a></li>
                     <div class="sign-in-hidden">
                         <a role="button" href="/src/pages/login/login.html">Login</a>
@@ -322,9 +327,9 @@
 </div>
 
 
-<section class="image-slider-container">
-    <div class="image-slider-heading">
-        <h2 class="image-slider-title">
+<section class="slider__movies">
+    <div class="slider__movies__heading">
+        <h2 class="slider__movies__title">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                     <rect width="13" height="13" x=".5" y=".5" rx="1"/>
@@ -337,13 +342,13 @@
     
     <div class="swiper-pagination"></div>
     
-    <div class="container-slider swiper">
+    <div class="slider__movies__container swiper">
         <div class="slide-container">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+            <div class="swiper-wrapper">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Divertida Mente 2.jpg" alt="Divertida Mente 2">
-                        <video src="/src/assets/posters-movies/categorias/animacao/trailer/Divertida Mente 2 _ Trailer Dublado.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/posters-movies/categorias/animacao/trailer/Divertida Mente 2 _ Trailer Dublado.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Divertida Mente 2.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Divertida Mente 2 _ Trailer Dublado.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -387,10 +392,10 @@
                         <h4 class="tags">2024 &sdot; Infantil/Comédia &sdot; 1hr 35min</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Os Farofeiros 2.png" alt="Os Farofeiros 2">
-                        <video src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS 2 - Trailer Oficial.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS 2 - Trailer Oficial.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie2" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Farofeiros 2.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS 2 - Trailer Oficial.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -435,10 +440,10 @@
                         <h4 class="tags">2024 &sdot; Comédia &sdot; 1hr 44min</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Os Caras Malvados.jpg" alt="Os Caras Malvados">
-                        <video src="/src/assets/posters-movies/categorias/comedia/trailers/Os Caras Malvados - Trailer Oficial.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/posters-movies/categorias/comedia/trailers/Os Caras Malvados - Trailer Oficial.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie3" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Caras Malvados.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Os Caras Malvados - Trailer Oficial.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -483,10 +488,10 @@
                         <h4 class="tags">2022 &sdot; Infantil/Comédia &sdot; 1h 40min</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Donzela.jpg" alt="Donzela">
-                        <video src="/src/assets/posters-movies/categorias/aventura/Trailers/Donzela - Trailer Dublado.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/posters-movies/categorias/aventura/Trailers/Donzela - Trailer Dublado.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie4" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Donzela.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Donzela - Trailer Dublado.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -531,10 +536,10 @@
                         <h4 class="tags">2024 &sdot; Ação/Aventura &sdot; 1h 50min</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Jumanji Bem vindo à Selva.png" alt="Jumanji: Bem-vindo à Selva">
-                        <video src="/src/assets/posters-movies/categorias/aventura/Trailers/Jumanji_ Bem-vindo à Selva Trailer Internacional (Dublado).mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/posters-movies/categorias/aventura/Trailers/Jumanji_ Bem-vindo à Selva Trailer Internacional (Dublado).mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie5" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Jumanji - Bem-vindo à Selva.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Jumanji_ Bem-vindo à Selva Trailer Internacional (Dublado).mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -579,10 +584,10 @@
                         <h4 class="tags">2017 &sdot; Aventura/Ação &sdot; 1h 59min</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Mussum, o Filmis.jpg" alt="Mussum, o Filmis">
-                        <video src="/src/assets/filmes-em-destaques/trailers/MUSSUM O FILMIS - TRAILER OFICIAL.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/filmes-em-destaques/trailers/MUSSUM O FILMIS - TRAILER OFICIAL.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie6" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/filmes-em-destaques/trailers/thumbnail/Mussum, o Filmis.jpg" data-src="/src/assets/filmes-em-destaques/trailers/MUSSUM O FILMIS - TRAILER OFICIAL.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -627,10 +632,10 @@
                         <h4 class="tags">2023 &sdot; Drama</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Tá Escrito.jpeg" alt="Tá Escrito">
-                        <video src="/src/assets/filmes-em-destaques/trailers/Tá Escrito - Trailer Oficial.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/filmes-em-destaques/trailers/Tá Escrito - Trailer Oficial.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie7" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/filmes-em-destaques/trailers/thumbnail/Tá Escrito.jpg" data-src="/src/assets/filmes-em-destaques/trailers/Tá Escrito - Trailer Oficial.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -676,10 +681,10 @@
                         <h4 class="tags">2023 &sdot; Comédia</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/Um Gato de Sorte.jpg" alt="Um Gato de Sorte">
-                        <video src="/src/assets/filmes-em-destaques/trailers/UM GATO DE SORTE - Trailer.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/filmes-em-destaques/trailers/UM GATO DE SORTE - Trailer.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie8" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/filmes-em-destaques/trailers/thumbnail/Um Gato de Sorte.jpg" data-src="/src/assets/filmes-em-destaques/trailers/UM GATO DE SORTE - Trailer.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -725,10 +730,10 @@
                         <h4 class="tags">2024 &sdot; Infantil/Comédia &sdot; 1hr 28min</h4>
                     </div>
                 </div>
-                <div class="card swiper-slide">
-                    <div class="image slider__destaques-loading">
+                <div class="card__item__slide swiper-slide">
+                    <div class="card__item__image-box slider__destaques-loading">
                         <img src="/src/assets/filmes-em-destaques/kung-fu-panda-4-capa.jpg" alt="Kung Fu Panda 4">
-                        <video src="/src/assets/filmes-em-destaques/trailers/Kung Fu Panda 4 - Trailer Oficial Dublado.mp4" class="thumb-video" muted loop></video>
+                        <video src="/src/assets/filmes-em-destaques/trailers/Kung Fu Panda 4 - Trailer Oficial Dublado.mp4" class="thumbvideo" muted loop></video>
                         <a href="#desc-movie9" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="play playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/filmes-em-destaques/trailers/thumbnail/Kung Fu Panda 4.jpg" data-src="/src/assets/filmes-em-destaques/trailers/Kung Fu Panda 4 - Trailer Oficial Dublado.mp4">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -776,21 +781,19 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div> -->
     </div>
 </section>
 
 
-<section class="image-slider-container">
-    <div class="image-slider-cards-heading">
-        <h2 class="image-slider-title">Lançamentos</h2>
+<section class="carousel__movies">
+    <div class="carousel__movies__heading">
+        <h2 class="carousel__movies__title">Lançamentos</h2>
     </div>
-    <div class="container-card-slider swiper">
-        <div class="card-slide-container">
-            <div class="card-slider-wrapper swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+    <div class="carousel__movies__container swiper">
+        <div class="carousel__movies__items movies__carousel">
+            <div class="carousel__movies__wrapper swiper-wrapper">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Leo - poster.jpg" alt="Leo - Filme - poster" />
                         <a href="#desc-film-lançamentos" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Leo - filme.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Leo - Filme - Trailer.mp4">
@@ -835,13 +838,13 @@
                             Após décadas preso na escola, o lagarto Leo planeja conseguir sua liberdade.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Leo - Filme">Leo - Filme</h2>
                         <h4 class="tags">2023 &sdot; 1hr 42min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Debaixo do Píer - poster.jpg" alt="Debaixo do Píer - poster" />
                         <a href="#desc-film-lançamentos-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Debaixo do Píer.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Debaixo do Píer Trailer.mp4">
@@ -882,13 +885,13 @@
                         </h2>
                         <p class="desc">Dois caranguejos embarcam em uma jornada épica para voltar para casa depois que uma tempestade os leva para longe. Sua coragem logo une também suas famílias.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Debaixo do Píer">Debaixo do Píer</h2>
                         <h4 class="tags">2023 &sdot; 1h 27min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Stand Up – Minha Vida É uma Piada - poster.jpg" alt="Stand Up – Minha Vida É uma Piada - poster" />
                         <a href="#desc-film-lançamentos-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Stand Up – Minha Vida É uma Piada.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/STAND UP – MINHA VIDA É UMA PIADA _ Trailer Oficial.mp4">
@@ -929,13 +932,13 @@
                         </h2>
                         <p class="desc">Em Stand Up - Minha Vida É Uma Piada, João (Fabio Rabin) é um acupunturista casado com Laura (Carol Castro), com quem tem dois filhos. Apesar de estar em uma carreira estável e bem-sucedida, o verdadeiro sonho de João é se tornar um profissional de stand up comedy. Com o apoio da esposa, ele decide tentar a sorte como comediante, mas acaba se sentindo nervoso demais no palco e abandona o plano. Porém, ele descobre que outro comediante, Gerson (Marco Luque) roubou uma de suas piadas e está fazendo um grande sucesso. Tomando pelo ódio, João decide matar o homem, mas a situação acaba saindo comicamente do controle.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Stand Up – Minha Vida É uma Piada">Stand Up – Minha Vida É uma Piada</h2>
                         <h4 class="tags">2023 &sdot; 1h 42min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Buena Hamburguesa 2 - poster.jpg" alt="Buena Hamburguesa 2 - poster" />
                         <a href="#desc-film-lançamentos-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Buena Hamburguesa 2.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Trailer Oficial _ Good Burger 2.mp4">
@@ -955,8 +958,9 @@
                             <i class="ri-star-fill"></i>
                             <i class="ri-star-fill"></i>
                             <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
                             <i class="ri-star-line"></i>
+                            <i class="ri-star-line"></i>
+                            3,2
                         </span>
                         <div class="play__trailer-button">
                             <a href="#" class="playTrailer-modal" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Buena Hamburguesa 2.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Trailer Oficial _ Good Burger 2.mp4">
@@ -975,13 +979,13 @@
                         </h2>
                         <p class="desc">Ed e Dex se juntam para salvar o dia depois que um dos esquemas de negócios do Dex acidentalmente coloca em risco o destino do Good Burger.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Buena Hamburguesa 2">Buena Hamburguesa 2</h2>
                         <h4 class="tags">2023 &sdot; 1h 30min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/O Melhor Lugar da Terra - poster.jpg" alt="O Melhor Lugar da Terra - poster" />
                         <a href="#desc-film-lançamentos-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/O Melhor Lugar da Terra.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/O Melhor Lugar da Terra _ Trailer _ Dublado.mp4">
@@ -1021,13 +1025,13 @@
                         </h2>
                         <p class="desc">Em uma cidadezinha de pescadores, surge uma oportunidade para melhorar a economia e os moradores decidem fazer de tudo para que isso aconteça.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="O Melhor Lugar da Terra">O Melhor Lugar da Terra</h2>
                         <h4 class="tags">2023 &sdot; 1h 34min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Plano de Família - poster.jpg" alt="Plano de Família - poster" />
                         <a href="#desc-film-lançamentos-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Plano de Família.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Plano Em Família 2023 Trailer Oficial Legendado.mp4">
@@ -1068,13 +1072,13 @@
                         </h2>
                         <p class="desc">Dan é um antigo assassino profissional que decidiu viver uma vida normal. Mas quando inimigos do passado o encontram, ele foge para Las Vegas com a mulher e os três filhos para mantê-los à salvo.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Plano de Família">Plano de Família</h2>
                         <h4 class="tags">2023 &sdot; 1h 42min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Quem Fizer Ganha - poster.jpg" alt="Quem Fizer Ganha - poster" />
                         <a href="#desc-film-lançamentos-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none">
@@ -1115,13 +1119,13 @@
                         </h2>
                         <p class="desc">O técnico holandês Thomas Rongen tenta transformar o time de futebol da Samoa Americana em vencedor.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Quem Fizer Ganha">Quem Fizer Ganha</h2>
                         <h4 class="tags">2023 &sdot; 1h 37min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Herói por Encomenda - poster.jpg" alt="Herói por Encomenda - poster" />
                         <a href="#desc-film-lançamentos-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Herói por Encomenda.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Herói por Encomenda Trailer Oficial Legendado.mp4">
@@ -1162,13 +1166,13 @@
                         </h2>
                         <p class="desc">Um ex-agente das forças especiais trabalha como segurança para uma jornalista que está entrevistando um ditador. No meio da entrevista, ocorre um golpe militar e eles são forçados a fugir para a selva, onde precisam sobreviver.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Herói por Encomenda">Herói por Encomenda</h2>
                         <h4 class="tags">2023 &sdot; 1hr 49min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/lançamentos-2023/Dunki - poster.jpg" alt="Dunki - poster" />
                         <a href="#desc-film-lançamentos-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/lançamentos-2023/trailer/thumbnail/Dunki.jpg" data-src="/src/assets/posters-movies/lançamentos-2023/trailer/Dunki _ Official Trailer.mp4">
@@ -1208,7 +1212,7 @@
                         </h2>
                         <p class="desc">Um ex-soldado decide guiar um grupo de amigos em uma arriscada jornada para entrar no Reino Unido quando eles não conseguem o visto britânico.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Dunki">Dunki</h2>
                         <h4 class="tags">2023 &sdot; 2h 31min</h4>
                     </div>
@@ -1219,15 +1223,16 @@
     </div>
 </section>
 
-<section class="image-slider-container">
-    <div class="image-slider-cards-heading">
-        <h2 class="image-slider-title">Animação</h2>
+<section class="carousel__movies">
+    <div class="carousel__movies__heading">
+        <h2 class="carousel__movies__title">Animação</h2>
+        <a href="/src/pages/movies/animacao/animacao.html" class="view-more">Mais filmes<i class="ri-arrow-right-line"></i></a>
     </div>
-    <div class="container-card-slider swiper">
-        <div class="card-slide-container-animation">
-            <div class="card-slider-wrapper swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+    <div class="carousel__movies__container swiper">
+        <div class="carousel__movies__items carousel__movies__animation">
+            <div class="carousel__movies__wrapper swiper-wrapper">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Hop - Rebelde sem Páscoa.jpg" alt="Hop - Rebelde sem Páscoa - poster" />
                         <a href="#desc-film-animation" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Hop Rebelde sem Páscoa.png" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Hop - O Rebelde Sem Páscoa - Trailer Dublado.mp4">
@@ -1269,13 +1274,13 @@
                         </h2>
                         <p class="desc">O coelho Junior sonha em fazer sucesso com a música, mas seu pai, o Coelho da Páscoa, deseja que ele dê continuidade à tradição do feriado, seguida há quatro mil anos. Ao chegar em Hollywood, ele é acidentalmente atropelado por um homem atrapalhado que acaba aceitando ajudar o coelhinho em sua carreira musical. Contudo, Junior não percebe que algo estranho começa a desestabilizar a Ilha de Páscoa.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Hop - Rebelde sem Páscoa">Hop - Rebelde sem Páscoa</h2>
                         <h4 class="tags">2011 &sdot; 1h 35min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/OBomDinossauro.jpg" alt="O Bom Dinossauro - poster" />
                         <a href="#desc-film-animation-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/O Bom Dinossauro.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/O Bom Dinossauro Trailer Oficial.mp4">
@@ -1317,13 +1322,13 @@
                         </h2>
                         <p class="desc">Depois que um evento traumático perturba o animado dinossauro Arlo, ele parte em uma jornada notável. No caminho para voltar para casa, ele acaba ganhando um companheiro improvável: um menino humano chamado Spot.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="O Bom Dinossauro">O Bom Dinossauro</h2>
                         <h4 class="tags">2015 &sdot; 1h 33min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Divertida Mente 2.jpg" alt="Divertida Mente 2 - poster" />
                         <a href="#desc-film-animation-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Divertida Mente 2.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Divertida Mente 2 _ Trailer Dublado.mp4">
@@ -1365,13 +1370,13 @@
                         </h2>
                         <p class="desc">Divertida Mente 2 marca a sequência da famosa história de Riley (Kaitlyn Dias). Com um salto temporal, a garota agora se encontra mais velha, passando pela tão temida adolescência. Junto com o amadurecimento, a sala de controle mental da jovem também está passando por uma demolição para dar lugar a algo totalmente inesperado: novas emoções. As já conhecidas, Alegria (Amy Poehler), Tristeza (Phyllis Smith), Raiva, Medo (Tony Hale) e Nojinho (Liza Lapira), que há muito tempo administram uma operação bem-sucedida, não têm certeza de como se sentir quando novos inquilinos chegam ao local, sendo um deles a tão temida Ansiedade (Maya Hawke).</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Divertida Mente 2">Divertida Mente 2</h2>
                         <h4 class="tags">2024 &sdot; 1h 35min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Super Mario Bros O Filme.jpg" alt="Super Mario Bros O Filme - poster" />
                         <a href="#desc-film-animation-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Super Mario Bros O Filme.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/SUPER MARIO BROS - O FILME _ Trailer Oficial.mp4">
@@ -1413,13 +1418,13 @@
                         </h2>
                         <p class="desc">Mario e seu irmão Luigi são encanadores do Brooklyn, em Nova York. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach. O local é ameaçado por Bowser, rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Super Mario Bros O Filme">Super Mario Bros O Filme</h2>
                         <h4 class="tags">2023 &sdot; 1h 32min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/Sing 2.jpg" alt="Sing 2 - poster" />
                         <a href="#desc-film-animation-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Sing 2.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/SING 2 _ Trailer 2 Oficial.mp4">
@@ -1460,13 +1465,13 @@
                         </h2>
                         <p class="desc">Na glamourosa cidade de Redshore, Buster Moon e a galera enfrentam seus medos, fazem novos amigos e superam seus limites em uma jornada para convencer o recluso astro Clay Calloway a subir aos palcos novamente.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Sing 2">Sing 2</h2>
                         <h4 class="tags">2021 &sdot; 1h 50min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/O Lorax - Em Busca da Trúfula Perdida.jpg" alt="O Lorax: Em Busca da Trúfula Perdida - poster" />
                         <a href="#desc-film-animation-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/O Lorax - Em Busca da Trúfula Perdida.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/O Lorax -- Em Busca da Trúfula Perdida - Trailer.mp4">
@@ -1508,13 +1513,13 @@
                         </h2>
                         <p class="desc">Ted vive em um lugar onde as árvores são feitas de plástico e tudo é artificial. Ele deixa a cidade com a intenção de trazer uma árvore de verdade para impressionar a garota por quem é apaixonado.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="O Lorax: Em Busca da Trúfula Perdida">O Lorax: Em Busca da Trúfula Perdida</h2>
                         <h4 class="tags">2012 &sdot; 1h 26min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/O Rei Leão.jpg" alt="O Rei Leão - poster" />
                         <a href="#desc-film-animation-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/O Rei Leão - Filme.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/O Rei Leão _ Trailer 2019_ Oficial.mp4">
@@ -1555,13 +1560,13 @@
                         </h2>
                         <p class="desc">Traído e exilado de seu reino, o leãozinho Simba precisa descobrir como crescer e retomar seu destino como herdeiro real nas planícies da savana africana.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="O Rei Leão">O Rei Leão</h2>
                         <h4 class="tags">2019 &sdot; 2 horas</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/soul - poster.jpg" alt="Soul - poster" />
                         <a href="#desc-film-animation-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Soul.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Soul - Trailer Dublado.mp4">
@@ -1602,13 +1607,13 @@
                         </h2>
                         <p class="desc">Joe é um professor de música do ensino médio apaixonado por jazz, cuja vida não foi como ele esperava. Quando ele viaja a uma outra realidade para ajudar outra pessoa a encontrar sua paixão, ele descobre o verdadeiro sentido da vida.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Soul">Soul</h2>
                         <h4 class="tags">2020 &sdot; 1hr 40min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/animacao/osBoxTrolls.jpg" alt="Os Boxtrolls - poster" />
                         <a href="#desc-film-animation-teen" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/animacao/trailer/thumbnail/Os Boxtrolls.jpg" data-src="/src/assets/posters-movies/categorias/animacao/trailer/Os Boxtrolls - Trailer Internacional Dublado.mp4">
@@ -1649,7 +1654,7 @@
                         </h2>
                         <p class="desc">Ovo, um menino órfão, foi criado pelos Boxtrolls, criaturas peculiares e amáveis que vivem nos esgotos de Ponte Queijo. Com medo de serem capturados pelo impiedoso Archibald Snatcher, os Broxtrolls só podem deixar o subterrâneo à noite. Quando o vilão põe em prática seu plano para exterminar estas inofensivas criaturas, Ovo decide sair do esgoto para salvá-las. Nesta aventura, ele conhece Winnie, uma menina mimada, que se junta a ele.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Os Boxtrolls">Os Boxtrolls</h2>
                         <h4 class="tags">2014 &sdot; 1h 36min</h4>
                     </div>
@@ -1660,15 +1665,16 @@
     </div>
 </section>
 
-<section class="image-slider-container">
-    <div class="image-slider-cards-heading">
-        <h2 class="image-slider-title">Aventura</h2>
+<section class="carousel__movies">
+    <div class="carousel__movies__heading">
+        <h2 class="carousel__movies__title">Aventura</h2>
+        <a href="/src/pages/movies/aventura/aventura.html" class="view-more">Mais filmes<i class="ri-arrow-right-line"></i></a>
     </div>
-    <div class="container-card-slider swiper">
-        <div class="card-slide-container-aventure">
-            <div class="card-slider-wrapper swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+    <div class="carousel__movies__container swiper">
+        <div class="carousel__movies__items carousel__movies__aventure">
+            <div class="carousel__movies__wrapper swiper-wrapper">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Lightyear.jpeg" alt="Lightyear - poster" />
                         <a href="#desc-film-aventure" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Lightyear.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Lightyear Trailer.mp4">
@@ -1713,13 +1719,13 @@
                             O lendário Buzz Lightyear e sua tripulação cumprem a missão mais difícil de todas até agora. Eles devem aprender a trabalhar juntos para escaparem do malvado Zurg e de seu exército de robôs.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Lightyear">Lightyear</h2>
                         <h4 class="tags">2022 &sdot; 1h 45min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Meu Amigo o Dragão.jpg" alt="Meu Amigo, o Dragão - poster" />
                         <a href="#desc-film-aventure-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none">
@@ -1763,13 +1769,13 @@
                         </h2>
                         <p class="desc">O pequeno órfão Pete é encontrado pelo dragão Elliot e os dois passam a viver na floresta. Seis anos depois, Pete é descoberto pela jovem Natalie.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Meu Amigo, o Dragão">Meu Amigo, o Dragão</h2>
                         <h4 class="tags">2016 &sdot; 1h 43min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/A Fera do Mar.jpg" alt="A Fera do Mar - poster" />
                         <a href="#desc-film-aventure-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/A Fera do Mar.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/A Fera do Mar _ Trailer _ Dublado.mp4">
@@ -1814,13 +1820,13 @@
                             Uma menina entra escondida no navio de um grande caçador de monstros marinhos. Juntos, eles iniciam uma jornada épica por águas desconhecidas.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="A Fera do Mar">A Fera do Mar</h2>
                         <h4 class="tags">2016 &sdot; 1h 43min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Lara-Croft-Tomb-Raider.jpg" alt="Lara Croft: Tomb Raider - poster" />
                         <a href="#desc-film-aventure-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Lara Croft - Tomb Raider.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Lara Croft - Tomb Raider - Trailer Legendado.mp4">
@@ -1866,13 +1872,13 @@
                             Lara Croft é uma aventureira que passa o dia a dia explorando impérios perdidos, descobrindo tesouros preciosos e punindo vilões em combates mortais. Mas, um antigo segredo de seu pai, um célebre arqueólogo desaparecido, está prestes a levar Lara a seu maior desafio: o Triângulo de Luz, uma relíquia lendária com o poder de alterar o tempo e o espaço. Ela precisa encontrar o Triângulo antes que caia nas mãos dos Illuminati, uma sociedade secreta que quer dominar o mundo.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Lara Croft: Tomb Raider">Lara Croft: Tomb Raider</h2>
                         <h4 class="tags">2001 &sdot; 1h 40min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/A-Lenda-do-Tesouro-Perdido.png" alt="A Lenda do Tesouro Perdido - poster" />
                         <a href="#desc-film-aventure-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/A Lenda do Tesouro Perdido.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/A Lenda do Tesouro Perdido Trailer Oficial Legendado.mp4">
@@ -1918,13 +1924,13 @@
                             O historiador e decodificador Ben Gates tem procurado, durante toda a sua vida, um conhecido tesouro que existe desde a criação dos Estados Unidos. Ao participar de uma expedição liderada pelo caçador de tesouros Ian Howe, Gates encontra um navio colonial preso no gelo do Círculo Ártico que tem uma pista ligando o tesouro com a Declaração da Independência. Mas quando Howe o trai, Gates tem que correr para conseguir o documento antes do seu falso colega.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="A Lenda do Tesouro Perdido">A Lenda do Tesouro Perdido</h2>
                         <h4 class="tags">2004 &sdot; 2h 55min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Na-Selva.jpg" alt="Na Selva - poster" />
                         <a href="#desc-film-aventure-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Na Selva.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Na Selva - Trailer Oficial.mp4">
@@ -1969,13 +1975,13 @@
                             Um misterioso guia acompanha um aventureiro e seu amigo na floresta amazônica. A jornada se torna aterrorizante à medida que os elementos mais sombrios da natureza humana e as mais mortíferas ameaças os forçam a lutar pela sobrevivência.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Na Selva">Na Selva</h2>
                         <h4 class="tags">2017 &sdot; 1h 55min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Jumanji - Bem-vindo à Selva.jpg" alt="Jumanji: Bem-vindo à Selva - poster" />
                         <a href="#desc-film-aventura-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Jumanji - Bem-vindo à Selva.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Jumanji_ Bem-vindo à Selva Trailer Internacional (Dublado).mp4">
@@ -2021,13 +2027,13 @@
                             Quatro adolescentes encontram um videogame cuja ação se passa em uma floresta tropical. Empolgados com o jogo, eles escolhem seus avatares para o desafio, mas um evento inesperado faz com que eles sejam transportados para dentro do universo fictício, transformando-os nos personagens da aventura.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Jumanji: Bem-vindo à Selva">Jumanji: Bem-vindo à Selva</h2>
                         <h4 class="tags">2017 &sdot; 1h 59min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/Donzela.jpg" alt="Donzela - poster" />
                         <a href="#desc-film-aventure-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Donzela.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Donzela - Trailer Dublado.mp4">
@@ -2072,13 +2078,13 @@
                             Uma jovem concorda em se casar com um belo príncipe, apenas para descobrir que tudo não passou de uma armadilha. Ela é jogada em uma caverna com um dragão cuspidor de fogo e deve confiar apenas em sua inteligência e vontade para sobreviver.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Donzela">Donzela</h2>
                         <h4 class="tags">2024 &sdot; 1h 50min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/aventura/abominavel.jpg" alt="Abominável - poster" />
                         <a href="#desc-film-aventure-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Abominável.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Abominável _ Trailer Dublado.mp4">
@@ -2123,7 +2129,7 @@
                             Uma adolescente e seus amigos embarcam em uma jornada épica para reunir um Yeti com sua amada família. Para isso, eles devem chegar no ponto mais alto do planeta.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Abominável">Abominável</h2>
                         <h4 class="tags">2019 &sdot; 1h 32min</h4>
                     </div>
@@ -2135,15 +2141,15 @@
 </section>
 
 
-<section class="image-slider-container">
-    <div class="image-slider-cards-heading">
-        <h2 class="image-slider-title">Comédia</h2>
+<section class="carousel__movies">
+    <div class="carousel__movies__heading">
+        <h2 class="carousel__movies__title">Comédia</h2>
     </div>
-    <div class="container-card-slider swiper">
-        <div class="card-slide-container-comedia">
-            <div class="card-slider-wrapper swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+    <div class="carousel__movies__container swiper">
+        <div class="carousel__movies__items carousel__movies__comedia">
+            <div class="carousel__movies__wrapper swiper-wrapper">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Os Farofeiros - poster.jpg" alt="Os Farofeiros - poster" />
                         <a href="#desc-film-comédia" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Farofeiros.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS Trailer.mp4">
@@ -2189,13 +2195,13 @@
                             Quatro colegas de trabalho se programam para curtir o feriado prolongado em uma casa de praia e, chegando lá, descobrem que se meteram em uma tremenda roubada. Para começar o destino não é Búzios, mas Maringuaba; a residência alugada é encontrada caindo aos pedaços, bem diferente do prometido; a praia está sempre cheia; e as confusões são inúmeras.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Os Farofeiros">Os Farofeiros</h2>
                         <h4 class="tags">2018 &sdot; 1h 39min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Os Farofeiros 2 - poster.png" alt="Os Farofeiros 2 - poster" />
                         <a href="#desc-film-comédia-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Farofeiros 2.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/OS FAROFEIROS 2 - Trailer Oficial.mp4">
@@ -2241,13 +2247,13 @@
                             Em Os Farofeiros 2, acompanhamos um novo capítulo da história dos amigos Alexandre (Antônio Fragoso), Lima (Maurício Manfrini), Rocha (Charles Paraventi) e Diguinho (Nilton Bicudo). Quando Alexandre é reconhecido como o melhor gerente de vendas na empresa em que trabalha, ele ganha como recompensa por seus esforços uma viagem para a Bahia com toda a família. Porém, os outros três amigos não estão muito felizes com a forma como Alexandre comanda as coisas. Para tentar amolecer o coração dos amigos e garantir sua tão esperada promoção, ele resolve levar todos - acompanhados das esposas e dos filhos - para a viagem ao Nordeste.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Os Farofeiros 2">Os Farofeiros 2</h2>
                         <h4 class="tags">2024 &sdot; 1h 44min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Dias Perfeitos - poster.png" alt="Dias Perfeitos - poster" />
                         <a href="#desc-film-comédia-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Dias Perfeitos.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Dias Perfeitos - Trailer Oficial (Legendado).mp4">
@@ -2293,13 +2299,13 @@
                             Dias Perfeitos acompanha a história de Hirayama (Koji Yakusho), um homem de meia idade reflexivo que vive sua vida de forma modesta como zelador e limpando banheiros em Tóquio. Sua vida é revelada ao espectador através da música que ouve, dos livros que lê e das fotos que tira das árvores, uma vez que são suas três paixões. Á medida que a vida de Hirayama avança, encontros inesperados começam a surgir revelando um passado sombrio e não tão metódico do zelador. O longa explora temas como a solidão, fuga e busca de sentido na vida moderna.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Dias Perfeitos">Dias Perfeitos</h2>
                         <h4 class="tags">2024 &sdot; 2h 5min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/O Homem dos Sonhos - poster.png" alt="O Homem dos Sonhos - poster" />
                         <a href="#desc-film-comédia-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/o homem dos sonhos.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/O Homem dos Sonhos - Trailer Dublado.mp4">
@@ -2345,13 +2351,13 @@
                             Dirigido por Kristoffer Borgli, O Homem dos Sonhos é um filme de comédia estrelado pelo vencedor do Oscar Nicolas Cage. A trama acompanha a vida de Paul Matthews, um pai de família infeliz que vive uma vida banal com sua esposa Janet (Julianne Nicholson) e suas duas filhas Sophie (Lilly Bird) e Hannah (Jessica Clement). No entanto, sua simples vida vira de cabeça para baixo quando, misteriosamente, ele começa a aparecer nos sonhos de milhões de estranhos. Porém, uma hora, as aparições começam a se transformar em um grande pesadelo, e Paul deverá enfrentar as consequências de seu inesperado estrelato.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="O Homem dos Sonhos">O Homem dos Sonhos</h2>
                         <h4 class="tags">2023 &sdot; 1h 40min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Minha Irmã e Eu - poster.png" alt="Minha Irmã e Eu - poster" />
                         <a href="#desc-film-comédia-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Minha Irmã e Eu.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Minha Irmã E Eu - Trailer Oficial.mp4">
@@ -2397,13 +2403,13 @@
                             As irmãs Mirian (Ingrid) e Mirelly (Tatá Werneck) nasceram em Rio Verde, no interior de Goiás. Elas não realizaram o sonho da mãe, Dona Márcia (Arlete Salles), de se tornarem uma dupla sertaneja e, além de terem seguido caminhos opostos, vivem em pé de guerra. Mirian se casou e nunca saiu de sua cidade, acostumada à rotina do interior. Já Mirelly partiu para o Rio de Janeiro e sem demonstrar pra família, passa todo o tipo de perrengue. Mas quando Dona Márcia desaparece, elas têm que deixar de lado as diferenças e se unir para procurá-la, numa viagem que pode mudar suas vidas.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Minha Irmã e Eu">Minha Irmã e Eu</h2>
                         <h4 class="tags">2019</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Zé Colméia – O Filme - poster.png" alt="Zé Colméia – O Filme - poster" />
                         <a href="#desc-film-comédia-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Zé Colméia – O Filme.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Zé Colmeia - o Filme - Trailer dublado.mp4">
@@ -2449,13 +2455,13 @@
                             Zé Colmeia e seu amigo, Catatau, são os mais notórios arruaceiros do Parque Jellystone. Eles desenvolvem incontáveis planos para afastar os visitantes do parque e de suas comidas. Atrapalhando o piquenique perfeito está o inimigo, Guarda Smith. Mas quando o prefeito Brown anuncia que quer vender o parque para madeireiros, Zé Colmeia, Catatau e Guarda Smith juntam forças para salvar seu amado lar de fechar para sempre.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Zé Colméia – O Filme">Zé Colméia – O Filme</h2>
                         <h4 class="tags">2010 &sdot; 1h 20min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/Os Caras Malvados.jpg" alt="Os Caras Malvados - poster" />
                         <a href="#desc-film-comédia-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/Os Caras Malvados.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/Os Caras Malvados - Trailer Oficial.mp4">
@@ -2501,13 +2507,13 @@
                             Depois de uma vida inteira de assaltos lendários, os notórios criminosos Sr. Lobo, Sr. Cobra, Sr. Piranha, Sr. Tubarão e Srta. Tarântula são finalmente capturados. Para evitar uma sentença de prisão, os bandidos animais devem realizar seu golpe mais desafiador até agora - tornando-se cidadãos-modelo. Sob a tutela de seu mentor, Professor Marmelada, a duvidosa gangue se propõe a enganar o mundo e mostrar que está se tornando boa.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Os Caras Malvados">Os Caras Malvados</h2>
                         <h4 class="tags">2022 &sdot; 1h 40min</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/categorias/comedia/A Família Mitchell e a Revolta das Máquinas.png" alt="A Família Mitchell e a Revolta das Máquinas - poster" />
                         <a href="#desc-film-comédia-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="playTrailer-card" viewBox="0 0 24 24" fill="none" data-poster="/src/assets/posters-movies/categorias/comedia/trailers/thumbnail/A Família Mitchell e a Revolta das Máquinas.jpg" data-src="/src/assets/posters-movies/categorias/comedia/trailers/A Família Mitchell e a Revolta das Máquinas Trailer Dublado.mp4">
@@ -2553,7 +2559,7 @@
                             Depois de uma vida inteira de assaltos lendários, os notórios criminosos Sr. Lobo, Sr. Cobra, Sr. Piranha, Sr. Tubarão e Srta. Tarântula são finalmente capturados. Para evitar uma sentença de prisão, os bandidos animais devem realizar seu golpe mais desafiador até agora - tornando-se cidadãos-modelo. Sob a tutela de seu mentor, Professor Marmelada, a duvidosa gangue se propõe a enganar o mundo e mostrar que está se tornando boa.
                         </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="A Família Mitchell e a Revolta das Máquinas">A Família Mitchell e a Revolta das Máquinas</h2>
                         <h4 class="tags">2021 &sdot; 1h 54min</h4>
                     </div>
@@ -2565,15 +2571,15 @@
 </section>
 
 
-<section class="image-slider-container">
-    <div class="image-slider-cards-heading">
-        <h2 class="image-slider-title">Séries</h2>
+<section class="carousel__movies">
+    <div class="carousel__movies__heading">
+        <h2 class="carousel__movies__title">Séries</h2>
     </div>
-    <div class="container-card-slider swiper">
-        <div class="card-slide-container-series">
-            <div class="card-slider-wrapper swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+    <div class="carousel__movies__container swiper">
+        <div class="carousel__movies__items carousel__movies__series">
+            <div class="carousel__movies__wrapper swiper-wrapper">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/operação-lioness-poster.png" alt="Operação: Lioness - poster" />
                         <a href="#desc-serie" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2601,13 +2607,13 @@
                             situações de vida ou morte e evitar ao máximo erros que podem custar sua própria segurança, e do país, ela é
                             treinada e orientada por Joe (Zoe Saldana), a chefe da Operação Lioness.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Operação: Lioness">Operação: Lioness</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/citadel-poster.png" alt="Citadel - poster" />
                         <a href="#desc-serie-two" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2635,13 +2641,13 @@
                             últimos oito anos, mas tudo muda na vida da dupla quando Bernard Orlick (Stanley Tucci), membro veterano da
                             Citadel, busca desesperadamente a ajuda dos antigos colegas para impedir os planos perversos da Mantícora.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Citadel">Citadel</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/falando-a-real-poster.png" alt="Falando a Real - poster" />
                         <a href="#desc-serie-tree" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2670,13 +2676,13 @@
                             terapia cognitiva-comportamental. Quando Phil é diagnosticado com Parkinson, ele se vê obrigado a sair de sua
                             zona de conforto ao mesmo tempo em que precisa lidar com amigos, familiares e sua reputação. </p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Falando a Real">Falando a Real</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/wolf-pack-poster.png" alt="Wolf Pack - poster" />
                         <a href="#desc-serie-four" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2707,13 +2713,13 @@
                             mordida e sangue de lobisomem. Agora, o quarteto se une para descobrir sua origem e o motivo por trás dos
                             incêndios que têm causado destruição na região por anos.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Wolf Pack">Wolf Pack</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/a-garota-na-fita-poster.png" alt="A Garota na Fita - poster" />
                         <a href="#desc-serie-five" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2740,13 +2746,13 @@
                             jornalista estagiária que se compromete a fazer de tudo para ajudar a família Martín a encontrar a filha. Ao
                             longo de sua investigação, a jovem repórter acaba tendo que revisitar seu próprio passado.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="A Garota na Fita">A Garota na Fita</h2>
                         <h4 class="tags">2023 &sdot; 2 temporadas</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/as-pequenas-coisas-da-vida-poster.png" alt="As Pequenas Coisas da Vida - poster" />
                         <a href="#desc-serie-six" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2772,13 +2778,13 @@
                             de 2023. É baseada no livro Pequenas delicadezas, Cheryl Strayed. Foi adaptado por Liz Tigelaar e produzido pela
                             Best Day Ever Productions, Simpson Street, Hello Sunshine e ABC Signature.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="As Pequenas Coisas da Vida">As Pequenas Coisas da Vida</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/uma-questão-de-química-poster.png" alt="Uma Questão de Química - poster" />
                         <a href="#desc-serie-seven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2807,13 +2813,13 @@
                             Precisando deixar a carreira acadêmica de lado, ela se torna apresentadora de um programa de culinária.
                             Driblando as regras, Elizabeth ensina a outras mulheres dicas que vão muito além de simples receitas.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Uma Questão de Química">Uma Questão de Química</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/depois-da-cabana-poster.png" alt="Depois da Cabana - poster" />
                         <a href="#desc-serie-eight" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2844,13 +2850,13 @@
                             longe de terminarem, uma vez que seu sequestro aparenta estar conectado com outro crime que ocorrreu há treze
                             anos.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Depois da Cabana">Depois da Cabana</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/a-diplomata-poster.png" alt="A Diplomata - poster" />
                         <a href="#desc-serie-nine" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2877,13 +2883,13 @@
                             proporções, Kate se sente inadequada para cumprir os requisitos, além de que as consequências de sua missão
                             poderão afetar seu casamento e impactar o resto do mundo.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="A Diplomata">A Diplomata</h2>
                         <h4 class="tags">2023 &sdot; 2 temporadas</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/enfermeira-poster.png" alt="Enfermeira - poster" />
                         <a href="#desc-serie-teen" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2912,13 +2918,13 @@
                             investigação policial ao redor da morte de quatro pacientes do hospital, tentando entender as motivações da
                             suspeita e descobrir até que ponto a equipe médica teria conhecimento.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Enfermeira">Enfermeira</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/negociador-poster.png" alt="Negociador - poster" />
                         <a href="#desc-serie-eleven" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2941,13 +2947,13 @@
                         </h2>
                         <p class="desc">Em Negociador, um policial atormentado por luto e traumas enfrenta decisões vitais todos os dias, mas elas se intensificam ainda mais. Na série brasileira, o capitão Gabriel Menck (Malvino Salvador) já tem uma rotina estressante como negociador da polícia, lidando com criminosos perigosos. Sua vida ao tirar a farda segue angustiante, ele perdeu a esposa em um acidente e lida com o estresse pós-traumático do filho. Ao voltar ao trabalho, Menck se depara com uma investigação que o acusa de matar sua mulher.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Negociador">Negociador</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
                 </div>
-                <div class="card-item swiper-slide">
-                    <div class="imageBox__poster cardsMoviePoster">
+                <div class="carousel__movie__item swiper-slide">
+                    <div class="carousel__movie__poster-image cardsMoviePoster">
                         <img src="/src/assets/posters-movies/séries/refúgio-poster.png" alt="Refúgio - poster" />
                         <a href="#desc-serie-twelve" rel="modal:open"><i class='material-symbols-outlined sobre__filme' title="Descrição do Filme"></i></a>
                     </div>
@@ -2975,7 +2981,7 @@
                             envolvido no caso. Para tentar sair dessa situação e solucionar esse mistério, ele acaba descobrindo camadas
                             ainda mais sombrias sobre a cidade e sobre sua própria família.</p>
                     </div>
-                    <div class="movie-card-details">
+                    <div class="carousel__movie__details">
                         <h2 class="movie-name" title="Refúgio">Refúgio</h2>
                         <h4 class="tags">2023 &sdot; 1 temporada</h4>
                     </div>
@@ -2988,7 +2994,10 @@
 
 <footer>
     <div class="footer__content">
-        <h2 class="logo__superfilmes">Super Filmes</h2>
+        <h2 class="logo__superfilmes">
+            <img src="/src/assets/logo/logo.png" alt="Logo da Super Filmes" />
+            Super Filmes
+        </h2>
         <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
     </div>
 </footer>

@@ -3,6 +3,7 @@
       slidesPerView: 4,
       spaceBetween: 20,
       loop: true,
+      grabCursor: true,
       centerSlide: "true",
       pagination: {
           el: ".swiper-pagination",
@@ -21,12 +22,12 @@
               slidesPerView: 3,
           },
           1080: {
-              slidesPerView: 4,
+              slidesPerView: 5,
           },
       },
   });
 
-  var swiper = new Swiper('.card-slide-container', {
+  var swiper = new Swiper('.movies__carousel', {
     slidesPerView: 7,
     spaceBetween: 10,
     loop: true,
@@ -51,10 +52,10 @@
       600: {
           slidesPerView: 3,
       },
-      820: {
+      768: {
           slidesPerView: 4,
       },
-      1164: {
+      992: {
           slidesPerView: 5,
       },
       1260: {
@@ -66,7 +67,7 @@
     },
   });
 
-  var swiper = new Swiper('.card-slide-container-animation', {
+  var swiper = new Swiper('.carousel__movies__animation', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
@@ -87,10 +88,10 @@
       600: {
           slidesPerView: 3,
       },
-      820: {
+      768: {
           slidesPerView: 4,
       },
-      1164: {
+      992: {
           slidesPerView: 5,
       },
       1260: {
@@ -102,7 +103,7 @@
     },
   });
 
-  var swiper = new Swiper('.card-slide-container-aventure', {
+  var swiper = new Swiper('.carousel__movies__aventure', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
@@ -123,10 +124,10 @@
       600: {
           slidesPerView: 3,
       },
-      820: {
+      768: {
           slidesPerView: 4,
       },
-      1164: {
+      992: {
           slidesPerView: 5,
       },
       1260: {
@@ -138,7 +139,7 @@
     },
   });
   
-  var swiper = new Swiper('.card-slide-container-comedia', {
+  var swiper = new Swiper('.carousel__movies__comedia', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
@@ -159,10 +160,10 @@
       600: {
           slidesPerView: 3,
       },
-      820: {
+      768: {
           slidesPerView: 4,
       },
-      1164: {
+      992: {
           slidesPerView: 5,
       },
       1260: {
@@ -174,7 +175,7 @@
     },
   });
 
-  var swiper = new Swiper('.card-slide-container-series', {
+  var swiper = new Swiper('.carousel__movies__series', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
@@ -195,10 +196,10 @@
       600: {
           slidesPerView: 3,
       },
-      820: {
+      768: {
           slidesPerView: 4,
       },
-      1164: {
+      992: {
           slidesPerView: 5,
       },
       1260: {
@@ -210,22 +211,41 @@
     },
   });
 
-  const video__thumbs = document.querySelectorAll(".thumb-video");
+  const video__thumbs = document.querySelectorAll(".thumbvideo");
 
-  video__thumbs.forEach((video__thumb) => {
-    video__thumb.addEventListener("mouseover", function () {
-      this.style.opacity = 1;
-      this.play();
-
-       setTimeout(() => {
-         video__thumb.style.opacity = 0;
-       }, 4000);
+  video__thumbs.forEach(thumbvideo => {
+    thumbvideo.addEventListener("mouseover", function () {
+        this.play();
+        this.style.opacity = '1';
+        setTimeout(() => {
+            this.style.opacity = '0'
+        }, 4000)
     });
   });
 
-  video__thumbs.forEach((video__thumb) => {
-    video__thumb.addEventListener("mouseleave", function () {
-      this.style.opacity = 0;
-      this.load();
+  video__thumbs.forEach(thumbvideo => {
+    thumbvideo.addEventListener("mouseleave", function () {
+        this.pause();
+        this.style.opacity = '0';
+        this.load();
+    });
+  });
+
+
+  video__thumbs.forEach(thumbvideo => {
+    thumbvideo.addEventListener("touchstart", function () {
+        this.play();
+        this.style.opacity = '1';
+        setTimeout(() => {
+            this.style.opacity = '0'
+        }, 4000)
+    });
+  });
+
+  video__thumbs.forEach(thumbvideo => {
+    thumbvideo.addEventListener("touchend", function () {
+        this.pause();
+        this.style.opacity = '0';
+        this.load();
     });
   });

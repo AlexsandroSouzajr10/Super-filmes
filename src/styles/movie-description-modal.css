@@ -1,5 +1,6 @@
 .modal{
     z-index: 100;
+    font-family: var(--font-modalMovie);
 }
 
 .modal .play__trailer-film{
@@ -106,26 +107,26 @@
 .play__trailer-button span{
     margin-left: 5px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .modal .title{
-    font-size: 1.1em;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 500;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .modal .title-sinopse{
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
 }
 
 .modal .desc{
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 3px;
-    max-height: 320px;
+    max-height: 260px;
     overflow-y: auto;
     line-height: 1.5;
 }
