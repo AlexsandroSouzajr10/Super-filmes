@@ -217,9 +217,12 @@
     thumbvideo.addEventListener("mouseover", function () {
         this.play();
         this.style.opacity = '1';
+        this.style.zIndex = '1';
+        this.style.display = 'block';
         setTimeout(() => {
             this.style.opacity = '0'
-        }, 4000)
+            this.style.zIndex = '0'
+        }, 6000)
     });
   });
 
@@ -227,6 +230,8 @@
     thumbvideo.addEventListener("mouseleave", function () {
         this.pause();
         this.style.opacity = '0';
+        this.style.zIndex = '0';
+        thumbvideo.style.display = 'none';
         this.load();
     });
   });

@@ -256,7 +256,7 @@ video{
 }
 
 .slider__movies__heading .slider__movies__title{
-    color: #fff;
+    color: var(--color-primary);
     font-size: 1.25em;
     font-weight: 600;
     letter-spacing: 1px;
@@ -331,8 +331,11 @@ video{
     position: absolute;
     top: 0;
     width: 100%;
+    display: block;
     height: 100%;
+    border-radius: 6px;
     opacity: 0;
+    z-index: 0;
     transition: .45s ease-in-out;
 }
 
@@ -371,7 +374,7 @@ video{
 
 .movie-details .movie-name{
     font-size: 18px;
-    color: #fff;
+    color: var(--color-primary);
     font-weight: 600;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -383,7 +386,7 @@ video{
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-primary);
 }
 
 .swiper-navBtn{
@@ -426,7 +429,7 @@ video{
 
 .carousel__movies__heading .carousel__movies__title{
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-primary);
     background: #292c2d00;
     border-left: 3px solid var(--border-title-category);
     font-size: 1.4em;
@@ -440,7 +443,7 @@ video{
     display: flex;
     align-items: center;
     gap: 5px;
-    color: #f8f8f8;
+    color: var(--color-primary);
     font-weight: 500;
     font-size: 18px;
     margin: 0 0 8px;
@@ -567,8 +570,8 @@ video{
 
 .carousel__movie__details .movie-name{
     font-size: 17px;
-    color: #fff;
-    font-weight: 600;
+    color: var(--color-primary);
+    font-weight: 400;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -578,8 +581,8 @@ video{
     display: flex;
     justify-content: center;
     font-size: 14px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 400;
+    color: var(--color-primary);
 }
 /* //MOVIES */
 
@@ -712,7 +715,7 @@ video{
 
 .poster__tags{
     margin-top: 8px;
-    color: #fff;
+    color: var(--color-primary);
     transition: 500ms;
 }
 
@@ -725,6 +728,129 @@ video{
 }
 /* //Categorias - Movies */
 
+footer{
+    background: #181818;
+    width: 100%;
+    padding: 15px;
+}
+
+footer .footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer__content .logo__superfilmes{
+    color: #f2f2f2;
+    font-size: 1.15em;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__content .logo__superfilmes img{
+    width: 28px;
+    pointer-events: none;
+}
+
+.footer__content span{
+    color: #f2f2f2;
+    font-size: 1em;
+}
+
+.footer__content a{
+    color: #f2f2f2;
+}
+
+.footer__content a:hover{
+    text-decoration: underline;
+}
+
+.modal-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.modal__bg{
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    height: 100vh;
+    width: 100%;
+}
+
+.modal__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+.modal__content .close{
+    position: absolute;
+    background: #0006;
+    padding: 0 5px 5px;
+    border-radius: 0 0 20px;
+    z-index: 1;
+}
+
+.modal__content .js-modal-close{
+    display: flex;
+    align-items: center;
+    transform: translate(-5%);
+    font-size: 1.65rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.modal__content .video-js{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.topo{
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    background: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    visibility: hidden;
+    opacity: 0;
+    height: 50px;
+    transition: .3s ease-in;
+    transform: translateY(100%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.topo svg{
+    width: 50px;
+    height: 50px;
+    transition: scale 300ms ease-in;
+}
+
+.topo:hover svg{
+    scale: 1.20;
+}
+
+.topo.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .slider__destaques-loading,
 .swiperPosterMovies,
@@ -733,27 +859,53 @@ video{
     position: relative;
 }
 
-:where(.slider__destaques-loading, .swiperPosterMovies, .cardsMoviePoster, .sliderMoviePages):before{
+:where(.slider__destaques-loading, .swiperPosterMovies, .cardsMoviePoster, .sliderMoviePages)::after{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: #656871;
-    background-image: linear-gradient(90deg, #656871, #72747b, #656871);
-    background-size: 20px 100%;
-    background-repeat: no-repeat;
-    background-position: left -40px top 0;
-    -webkit-animation: shine 1s ease infinite;
-            animation: shine 1s ease infinite;
+    background: #181818;
+    z-index: 20;
 }
 
-@keyframes shine{
-    to{
-        background-position: right -40px top 0;
+.spinner__loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 30;
+}
+
+.spinner__loading::after,
+.spinner__loading::before{
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+}
+
+.spinner__loading::before{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0, #f2f2f2 50%, #0000 0);
+    animation: spin 1s linear both infinite;
+}
+
+.spinner__loading::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #181818;
+    width: 95%;
+    height: 95%;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
     }
 }

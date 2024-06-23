@@ -3,24 +3,23 @@
     font-family: var(--font-modalMovie);
 }
 
-.modal .play__trailer-film{
-    position: absolute;
-    right: -10px;
-    display: flex;
-    align-items: center;
-    background: #000;
-    width: 40px;
-    height: 40px;
-    padding: 3px;
-    border-radius: 50px;
-    font-size: 35px;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 300ms;
+.modal .image__poster--modal img{
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.modal .play__trailer-film:hover{
-    transform: scale(1.15);
+.modal .image__poster--modal{
+    display: flex;
+    float: left;
+    margin-right: 20px;
+}
+
+.modal .title{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .modal .tags-movie{
@@ -66,19 +65,6 @@
     color: yellow;
 }
 
-.modal .image__poster--modal img{
-    width: 140px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.modal .image__poster--modal{
-    display: flex;
-    float: left;
-    margin-right: 20px;
-}
-
-
 .modal .play__trailer-button{
     display: flex;
     align-items: center;
@@ -108,13 +94,6 @@
     margin-left: 5px;
     font-size: 1em;
     font-weight: 400;
-}
-
-.modal .title{
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-align: center;
 }
 
 .modal .title-sinopse{

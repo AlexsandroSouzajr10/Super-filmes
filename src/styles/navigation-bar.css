@@ -22,12 +22,6 @@
     padding-inline: 1.5rem;
 }
 
-.centered{
-    text-align: center;
-    vertical-align: middle;
-    margin-bottom: 1rem;
-}
-
 .header.sticky{
     position: fixed;
     top: 0;
@@ -276,14 +270,52 @@
     width: 100%;
 }
 
-.submenu .submenu__list li{
-    display: block;
-    line-height: 1;
-    margin: 0 auto;
+.sign-in{
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.submenu .submenu__list li a:hover{
-    color: var(--submenu-navlinks-color);
+.sign-in a{
+    background: var(--bg-button-sign-in);
+    border: 1px solid var(--bg-button-sign-in);
+    color: #fff;
+    padding: 5px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 300ms;
+}
+
+.sign-in a:hover{
+    background: transparent;
+}
+
+.sign-in-hidden{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.sign-in-hidden a{
+    background: var(--bg-button-sign-in);
+    border: 1px solid var(--bg-button-sign-in);
+    color: #fff;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: background 300ms;
+}
+
+.sign-in-hidden a:hover{
+    background: transparent;
+}
+
+.sign-in-hidden{
+    display: none;
 }
 
 .searchBox-container {
@@ -383,54 +415,6 @@
     cursor: pointer;
 }
 
-.sign-in{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.sign-in a{
-    background: var(--bg-button-sign-in);
-    border: 1px solid var(--bg-button-sign-in);
-    color: #fff;
-    padding: 5px 20px;
-    margin: 0 5px;
-    border-radius: 20px;
-    font-size: 14px;
-    white-space: nowrap;
-    transition: 300ms;
-}
-
-.sign-in a:hover{
-    background: transparent;
-}
-
-.sign-in-hidden{
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.sign-in-hidden a{
-    background: var(--bg-button-sign-in);
-    border: 1px solid var(--bg-button-sign-in);
-    color: #fff;
-    padding: 5px 20px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 14px;
-    white-space: nowrap;
-    transition: background 300ms;
-}
-
-.sign-in-hidden a:hover{
-    background: transparent;
-}
-
-.sign-in-hidden{
-    display: none;
-}
-
 .overlay{
     position: fixed;
     display: block;
@@ -487,79 +471,6 @@
     right: 4px;
     color: #fff;
     margin: 0 35px;
-}
-
-
-.topo{
-    position: fixed;
-    right: 1em;
-    bottom: 1em;
-    background: #fff;
-    border-radius: 50px;
-    font-size: 16px;
-    visibility: hidden;
-    opacity: 0;
-    height: 50px;
-    transition: .3s ease-in;
-    transform: translateY(100%);
-    z-index: 1;
-    cursor: pointer;
-}
-
-.topo svg{
-    width: 50px;
-    height: 50px;
-    transition: scale 300ms ease-in;
-}
-
-.topo:hover svg{
-    scale: 1.20;
-}
-
-.topo.show{
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-footer{
-    background: #181818;
-    width: 100%;
-    padding: 15px;
-}
-
-footer .footer__content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.footer__content .logo__superfilmes{
-    color: #f2f2f2;
-    font-size: 1.15em;
-    font-weight: 500;
-    display: flex;
-    gap: 10px;
-}
-
-.footer__content .logo__superfilmes img{
-    width: 28px;
-    pointer-events: none;
-}
-
-.footer__content span{
-    color: #f2f2f2;
-    font-size: 1em;
-}
-
-.footer__content a{
-    color: #f2f2f2;
-}
-
-.footer__content a:hover{
-    text-decoration: underline;
 }
 
 

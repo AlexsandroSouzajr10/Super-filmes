@@ -7,9 +7,7 @@ $(function() {
                 $('.js-modal').find('video').attr("src", msrc),
                 $('.js-modal').find('video').attr("poster", poste),
                 $('.js-modal').fadeIn()
-            ) .done(function() {
-                // $('.js-modal').find('video').get(0).play()
-            });
+            )
             return false;
         });
     });
@@ -32,9 +30,7 @@ $(function() {
                 $('.js-modal').find('video').attr("src", msrc),
                 $('.js-modal').find('video').attr("poster", poste),
                 $('.js-modal').fadeIn()
-            ) .done(function() {
-                // $('.js-modal').find('video').get(0).play()
-            });
+            )
             return false;
         });
     });
@@ -57,9 +53,7 @@ $(function() {
                 $('.js-modal').find('video').attr("src", msrc),
                 $('.js-modal').find('video').attr("poster", poste),
                 $('.js-modal').fadeIn()
-            ) .done(function() {
-                // $('.js-modal').find('video').get(0).play()
-            });
+            )
             return false;
         });
     });

@@ -73,6 +73,7 @@ window.addEventListener("scroll", function() {
   let swiperMovies = document.querySelectorAll(".swiperPosterMovies");
   let sliderPages = document.querySelectorAll(".sliderMoviePages");
   let cardsMovies = document.querySelectorAll(".cardsMoviePoster");
+  let loading = document.querySelectorAll(".spinner__loading");
   
   window.addEventListener('load', () => {
       sliderDestaques.forEach(item => {
@@ -86,5 +87,8 @@ window.addEventListener("scroll", function() {
       })
       cardsMovies.forEach(item => {
           item.classList.remove("cardsMoviePoster")
+      })
+      loading.forEach(item => {
+          item.classList.remove("spinner__loading")
       })
   });

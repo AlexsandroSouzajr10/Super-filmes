@@ -34,3 +34,29 @@ function progress() {
         currentMainPost.classList.remove("main-post--not-active");
     }
 }
+
+let playing = true;
+let pauseSlideButton = document.querySelector(".pausePlay")
+
+
+function pauseSlide(){
+    playing = false;
+    clearInterval(progressInterval, 0);
+}
+
+function playSlide(){
+    playing = true;
+    progressInterval = setInterval(progress, 150)
+}
+
+pauseSlideButton.onclick = function(){
+    if(playing){
+        pauseSlide();
+    } else{
+        playSlide();
+    }
+}
+
+function changeIcon(e){
+    e.classList.toggle("ri-play-line");
+}
