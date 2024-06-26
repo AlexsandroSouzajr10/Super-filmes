@@ -338,7 +338,7 @@ img{
     position: relative;
 }
 
-.carousel__movie__poster-image::after{
+.carousel__movie__poster-image::before{
     content: "";
     position: absolute;
     top: 0;
@@ -371,7 +371,7 @@ img{
     bottom: 10px;
 }
 
-.carousel__movie__item:hover .carousel__movie__poster-image::after{
+.carousel__movie__item:hover .carousel__movie__poster-image::before{
     background: #111111a4;
     border-radius: 10px;
 }
@@ -479,7 +479,7 @@ img{
     position: relative;
 }
 
-.image-box::after{
+.image-box::before{
     content: "";
     display: block;
     position: absolute;
@@ -513,7 +513,7 @@ img{
     visibility: visible;
 }
 
-.poster__item:hover .image-box::after{
+.poster__item:hover .image-box::before{
     background: #111111a4;
 }
 
@@ -658,6 +658,7 @@ footer .footer__content{
 .cardsMoviePoster,
 .sliderMoviePages{
     position: relative;
+    cursor: default;
 }
 
 :where(.slider__destaques-loading, .swiperPosterMovies, .cardsMoviePoster, .sliderMoviePages)::after{
