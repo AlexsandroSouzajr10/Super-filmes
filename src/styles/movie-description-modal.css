@@ -1,5 +1,4 @@
 .modal{
-    z-index: 100;
     font-family: var(--font-modalMovie);
 }
 
@@ -19,7 +18,6 @@
     font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .modal .tags-movie{
@@ -68,7 +66,8 @@
 .modal .play__trailer-button{
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 5px;
     cursor: pointer;
     width: max-content;
     margin: 0;

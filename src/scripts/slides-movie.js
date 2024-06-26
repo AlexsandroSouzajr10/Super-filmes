@@ -1,5 +1,5 @@
-let mainPosts = document.querySelectorAll(".main-post");
-let posts = document.querySelectorAll(".post");
+let mainPosts = document.querySelectorAll(".main__poster__movie");
+let posts = document.querySelectorAll(".card__poster__movie");
 
 let i = 0;
 let postIndex = 0;
@@ -12,11 +12,11 @@ function progress() {
         i = -5;
         currentPost.querySelector(".progress-bar__fill").style.width = 0;
         document.querySelector(".progress-bar--primary .progress-bar__fill").style.width = 0;
-        currentPost.classList.remove("post--active");
+        currentPost.classList.remove("card__poster__movie--active");
         postIndex++;
 
-        currentMainPost.classList.add("main-post--not-active");
-        currentMainPost.classList.remove("main-post--active");
+        currentMainPost.classList.add("main__poster__movie--not-active");
+        currentMainPost.classList.remove("main__poster__movie--active");
 
         if(postIndex === posts.length) {
             postIndex = 0;
@@ -28,10 +28,10 @@ function progress() {
         i++;
         currentPost.querySelector(".progress-bar__fill").style.width = `${i}%`;
         document.querySelector(".progress-bar--primary .progress-bar__fill").style.width = `${i}%`;
-        currentPost.classList.add("post--active");
+        currentPost.classList.add("card__poster__movie--active");
 
-        currentMainPost.classList.add("main-post--active");
-        currentMainPost.classList.remove("main-post--not-active");
+        currentMainPost.classList.add("main__poster__movie--active");
+        currentMainPost.classList.remove("main__poster__movie--not-active");
     }
 }
 
@@ -58,5 +58,5 @@ pauseSlideButton.onclick = function(){
 }
 
 function changeIcon(e){
-    e.classList.toggle("ri-play-line");
+    e.classList.toggle("ph-play");
 }

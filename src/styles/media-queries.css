@@ -309,7 +309,7 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 599px){
     .carousel__movies .carousel__movies__heading{
         margin: 0 45px;
     }

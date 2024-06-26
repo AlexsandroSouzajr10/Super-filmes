@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="/src/styles/movie-description-modal.css">
     <link rel="stylesheet" href="/src/styles/vars.css">
     <link rel="stylesheet" href="/src/vendors/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 <header class="header" id="header">
@@ -185,7 +185,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/O-Filho-de-Deus-poster.png"
@@ -240,7 +240,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-two" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-two" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-two" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/Noé-poster.png" alt="Noé - poster" />
@@ -294,7 +294,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-tree" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-tree" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-tree" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/A-Paixão-de Cristo-poster.png"
@@ -349,7 +349,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-four" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-four" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-four" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/Ressurreição-poster.png" alt="Ressurreição - poster" />
@@ -403,7 +403,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-five" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-five" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-five" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/Paulo, Apóstolo-de-Cristo-poster.png"
@@ -458,7 +458,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-six" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-six" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-six" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/Os-Dez Mandamentos-poster.png"
@@ -513,7 +513,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-eight" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-eight" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-eight" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/Jesus-poster.png" alt="Jesus - poster" />
@@ -566,7 +566,7 @@
                 </svg>
             </div>
             <div class="info__movie">
-                <a href="#desc-film-c-biblicos-nine" rel="modal:open"><i class="material-symbols-outlined" title="Descrição do Filme"></i></a>
+                <a href="#desc-film-c-biblicos-nine" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
                 <div id="desc-film-c-biblicos-nine" class="modal">
                     <div class="image__poster--modal">
                         <img src="/src/assets/posters-movies/categorias/biblicos/O-Rei-dos-Reis-poster.png" alt="O Rei dos Reis - poster" />
@@ -617,26 +617,16 @@
 
 <div class="modal-video js-modal">
     <div class="modal__bg js-modal-close"></div>
+    <div class="close">
+        <i class="ph ph-x js-modal-close"></i>
+    </div>
     <div class="modal__content">
-        <div class="close"><span class="material-symbols-outlined js-modal-close">
-            close
-            </span></div>
-            <video
-            id="my-video"
-            class="video-js"
-            controls
-            preload="auto"
-            data-setup="{}"
-            src=""
-          >
+        <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" src="">
             <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank"
-                >supports HTML5 video</a
-              >
+                Para ver este vídeo, habilite o JavaScript e considere atualizar para um navegador que
+                <a href="https://videojs.com/html5-video-support/" target="_blank">suporta vídeo HTML5</a>
             </p>
-          </video>
+        </video>
     </div>
 </div>
 
